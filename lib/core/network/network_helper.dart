@@ -55,6 +55,25 @@ class NetworkHelper {
     return response;
   }
 
+  Future<Response> put({
+    required String endPoint,
+    dynamic data,
+    bool withToken = true,
+  }) async {
+    var response = await _dio.put(endPoint,
+        data: data, options: await _configureOptions(withToken));
+    return response;
+  }
+
+  Future<Response> delete({
+    required String endPoint,
+    bool withToken = true,
+  }) async {
+    var response = await _dio.delete(endPoint,
+        options: await _configureOptions(withToken));
+    return response;
+  }
+
   Future<Options> _configureOptions(bool withToken) async {
     Options options = Options();
     if (withToken) {
@@ -66,18 +85,5 @@ class NetworkHelper {
       };
     }
     return options;
-  }
-
-  Future<void> downloadFile({
-    required String fileUrl,
-    required String savePath,
-    bool withToken = true,
-  }) async {
-    try {
-      Options options = await _configureOptions(withToken);
-      await _dio.download(fileUrl, savePath, options: options);
-    } catch (error) {
-      print('Download error: $error');
-    }
   }
 }
