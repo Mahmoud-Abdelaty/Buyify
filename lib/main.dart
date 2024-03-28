@@ -1,4 +1,4 @@
-import 'package:ecommerce/core/caching/shared_helper.dart';
+import 'package:Buyify/core/caching/shared_helper.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
@@ -21,7 +21,7 @@ class MyApp extends StatelessWidget {
       builder: (_, child) {
         return MaterialApp(
           debugShowCheckedModeBanner: false,
-          title: 'E-Commerce',
+          title: 'Buyify',
           home: child,
         );
       },

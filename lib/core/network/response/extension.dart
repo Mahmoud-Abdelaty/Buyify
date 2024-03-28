@@ -1,7 +1,7 @@
-import 'package:ecommerce/core/network/response/code.dart';
-import 'package:ecommerce/core/network/response/failure.dart';
-import 'package:ecommerce/core/network/response/message.dart';
-import 'package:ecommerce/core/network/response/type.dart';
+import 'package:Buyify/core/network/response/code.dart';
+import 'package:Buyify/core/network/response/failure.dart';
+import 'package:Buyify/core/network/response/message.dart';
+import 'package:Buyify/core/network/response/type.dart';
 
 extension NetworkResponseExtension on NetworkResponse {
   Failure getMessage() {

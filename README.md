@@ -1,5 +1,5 @@
-# E-Commerce
+# Buyify
 
-An ecommerce app allows users to shop online, browse product catalogs, create wish lists, add items to a cart, and complete purchases.
+Buyify is an ecommerce app allows users to shop online, browse product catalogs, create wish lists, add items to a cart, and complete purchases.
 
 

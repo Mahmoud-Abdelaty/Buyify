@@ -1,7 +1,7 @@
+import 'package:Buyify/core/network/response/extension.dart';
+import 'package:Buyify/core/network/response/failure.dart';
+import 'package:Buyify/core/network/response/type.dart';
 import 'package:dio/dio.dart';
-import 'package:ecommerce/core/network/response/extension.dart';
-import 'package:ecommerce/core/network/response/failure.dart';
-import 'package:ecommerce/core/network/response/type.dart';
 
 class ErrorHandler implements Exception {
   Failure? failure;

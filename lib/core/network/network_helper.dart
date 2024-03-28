@@ -1,7 +1,7 @@
+import 'package:Buyify/core/caching/caching_key.dart';
+import 'package:Buyify/core/caching/shared_helper.dart';
+import 'package:Buyify/core/network/endpoints.dart';
 import 'package:dio/dio.dart';
-import 'package:ecommerce/core/caching/caching_key.dart';
-import 'package:ecommerce/core/caching/shared_helper.dart';
-import 'package:ecommerce/core/network/endpoints.dart';
 import 'package:flutter/foundation.dart';
 import 'package:pretty_dio_logger/pretty_dio_logger.dart';
 
