@@ -2,6 +2,8 @@ import 'package:Buyify/core/caching/shared_helper.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
+import 'features/authentication/view/login_view.dart';
+
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await ScreenUtil.ensureScreenSize();
@@ -15,7 +17,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ScreenUtilInit(
-      designSize: const Size(360, 690),
+      designSize: const Size(375, 812),
       minTextAdapt: true,
       splitScreenMode: true,
       builder: (_, child) {
@@ -25,7 +27,7 @@ class MyApp extends StatelessWidget {
           home: child,
         );
       },
-      child: const Dummy(),
+      child: const LoginView(),
     );
   }
 }
