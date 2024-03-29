@@ -29,3 +29,8 @@ flutter:
     - family: iconsax
       fonts:
         - asset: assets/fonts/iconsax.ttf
+    - family: DMSans
+      fonts:
+        - asset: assets/fonts/DMSans-Bold.ttf
+        - asset: assets/fonts/DMSans-Medium.ttf
+        - asset: assets/fonts/DMSans-Regular.ttf
