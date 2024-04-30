@@ -84,8 +84,8 @@ class NetworkHelper {
       var token = SharedHelper.instance?.readString(CachingKey.TOKEN);
       options.headers = {
         'Authorization': 'Bearer $token',
-        'Accept': 'application/json',
-        'Accept-Language': 'en',
+        'Content-Type': 'application/json',
+        'lang': 'en',
       };
     }
     return options;
