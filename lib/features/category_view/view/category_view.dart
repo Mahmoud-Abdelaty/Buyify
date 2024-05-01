@@ -38,22 +38,23 @@ class _CategoryViewState extends State<CategoryView> {
                         ),
                       ),
                     ),
-                    SearchBox(
-                      enabled: true,
-                      onChanged: (value) {
-                        setState(() {
-                          list = state.data
-                              .where((product) => product.name
-                                  .toLowerCase()
-                                  .contains(value.toLowerCase()))
-                              .toList();
-                        });
-                      },
-                    ),
-                    if (list.isNotEmpty)
-                      SizedBox(
-                          height: 200.h,
-                          child: SearchBoxResult(productModel: list)),
+                    SearchBox(),
+                    // SearchBox(
+                    //   enabled: true,
+                    //   onChanged: (value) {
+                    //     setState(() {
+                    //       list = state.data
+                    //           .where((product) => product.name
+                    //               .toLowerCase()
+                    //               .contains(value.toLowerCase()))
+                    //           .toList();
+                    //     });
+                    //   },
+                    // ),
+                    // if (list.isNotEmpty)
+                    //   SizedBox(
+                    //       height: 200.h,
+                    //       child: SearchBoxResult(productModel: list)),
                     Container(
                       decoration: BoxDecoration(
                           color: AppColors.off_grey,
@@ -81,13 +82,9 @@ class _CategoryViewState extends State<CategoryView> {
                 ),
               );
             } else if (state is GetCategoryLoading) {
-              return const Center(
-                  child: CircularProgressIndicator(
-                color: AppColors.blue_ocean,
-              ));
+              return LoadingState();
             } else {
-              return Center(
-                  child: Lottie.asset('assets/images/error_animation.json'));
+              return ErrorState();
             }
           },
         ),

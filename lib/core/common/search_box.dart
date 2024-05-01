@@ -10,12 +10,16 @@ class SearchBox extends StatelessWidget {
     return Padding(
       padding: EdgeInsets.fromLTRB(20.w, 25.h, 20.w, 20.h),
       child: GestureDetector(
-        onTap: () => Navigator.push(
-          context,
-          MaterialPageRoute(
-            builder: (context) => SearchView(),
-          ),
-        ),
+        onTap: () {
+          if (enabled == false) {
+            Navigator.push(
+              context,
+              MaterialPageRoute(
+                builder: (context) => const SearchView(),
+              ),
+            );
+          }
+        },
         child: Container(
           width: 325.w,
           height: 45.h,

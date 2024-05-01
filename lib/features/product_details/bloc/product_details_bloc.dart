@@ -1,3 +1,5 @@
+import 'package:Buyify/features/home/data/models/home_model.dart';
+import 'package:Buyify/features/product_details/data/repo/product_details_repo.dart';
 import 'package:bloc/bloc.dart';
 import 'package:meta/meta.dart';
 
@@ -6,9 +8,18 @@ part 'product_details_state.dart';
 
 class ProductDetailsBloc
     extends Bloc<ProductDetailsEvent, ProductDetailsState> {
-  ProductDetailsBloc() : super(ProductDetailsInitial()) {
-    on<ProductDetailsEvent>((event, emit) {
-      // TODO: implement event handler
+  final ProductDetailsRepo productDetailsRepo;
+
+  ProductDetailsBloc(this.productDetailsRepo) : super(ProductDetailsInitial()) {
+    on<GetProductDetails>((event, emit) async {
+      emit(ProductDetailsLoading());
+      try {
+        var result = await productDetailsRepo.fetchProductDetails(event.id);
+        result.fold((l) => emit(ProductDetailsError()),
+            (r) => emit(ProductDetailsSuccess(r)));
+      } catch (e) {
+        emit(ProductDetailsError());
+      }
     });
   }
 }

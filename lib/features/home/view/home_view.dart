@@ -79,13 +79,9 @@ class HomeScreen extends StatelessWidget {
                 ),
               );
             } else if (state is HomeLoading) {
-              return const Center(
-                  child: CircularProgressIndicator(
-                color: AppColors.blue_ocean,
-              ));
+              return LoadingState();
             } else {
-              return Center(
-                  child: Lottie.asset('assets/images/error_animation.json'));
+              return ErrorState();
             }
           },
         ),
