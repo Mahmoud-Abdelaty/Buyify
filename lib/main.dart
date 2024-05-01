@@ -1,4 +1,5 @@
 import 'package:Buyify/core/caching/shared_helper.dart';
+import 'package:Buyify/features/home/view/widget/widgets.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
@@ -25,7 +26,7 @@ class MyApp extends StatelessWidget {
           home: child,
         );
       },
-      child: const Dummy(),
+      child: const HomeView(),
     );
   }
 }

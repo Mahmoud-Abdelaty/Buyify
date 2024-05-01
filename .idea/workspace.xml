@@ -10,14 +10,30 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b74bfcc6-e980-4aff-bea4-fedd4bf9fd11" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/lib/core/helpers/functions.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/core/utils/app_text.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Dart_SDK.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Dart_SDK.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Flutter_Plugins.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Flutter_Plugins.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/error_animation.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/core/common/custom_appBar.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/core/common/item_box.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/core/common/line_separate.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/core/common/search_box.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/features/home/bloc/home_bloc.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/features/home/bloc/home_event.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/features/home/bloc/home_state.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/features/home/data/models/banner_model.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/features/home/data/models/category_model.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/features/home/data/models/home_model.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/features/home/data/models/product_model.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/features/home/data/repo/home_repo.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/features/home/data/repo/home_repo_impl.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/features/home/view/home_view.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/features/home/view/widget/all_categories.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/features/home/view/widget/banners.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/features/home/view/widget/category_section.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/features/home/view/widget/dialog_product_action.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/features/home/view/widget/image_box.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/features/home/view/widget/products_section.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/features/home/view/widget/title_sections.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/features/home/view/widget/widgets.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/core/network/network_helper.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/core/network/network_helper.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/core/utils/app_colors.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/core/utils/app_colors.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/main.dart" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -47,6 +63,9 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="2e8kMtwfFNNfP7Tcl1oUbDy1I8k" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -59,17 +78,17 @@
     "cf.first.check.clang-format": "false",
     "cidr.known.project.marker": "true",
     "dart.analysis.tool.window.visible": "false",
-    "git-widget-placeholder": "main",
+    "git-widget-placeholder": "feature/home",
     "io.flutter.reload.alreadyRun": "true",
-    "last_opened_file_path": "D:/GitHub/Buyify/lib/core",
+    "last_opened_file_path": "D:/GitHub/Buyify/lib/features",
     "show.migrate.to.gradle.popup": "false"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\GitHub\Buyify\lib\features" />
       <recent name="D:\GitHub\Buyify\lib\core" />
-      <recent name="D:\GitHub\Buyify\lib\core\utils" />
-      <recent name="D:\GitHub\Buyify\lib\core\helpers" />
+      <recent name="D:\GitHub\Buyify\assets" />
       <recent name="C:\Users\DELL\Documents\GitHub\E-Commerce\android\app\src\main\res" />
       <recent name="C:\Users\DELL\Documents\GitHub\E-Commerce\web\icons" />
     </key>
