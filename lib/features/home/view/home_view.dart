@@ -79,10 +79,7 @@ class HomeScreen extends StatelessWidget {
                 ),
               );
             } else if (state is HomeLoading) {
-              return const Center(
-                  child: CircularProgressIndicator(
-                color: AppColors.blue_ocean,
-              ));
+              return LoadingState();
             } else {
               return const ErrorState();
             }

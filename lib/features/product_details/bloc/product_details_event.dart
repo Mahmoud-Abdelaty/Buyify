@@ -1,4 +1,9 @@
 part of 'product_details_bloc.dart';
 
 @immutable
-sealed class ProductDetailsEvent {}
+abstract class ProductDetailsEvent {}
+
+class GetProductDetails extends ProductDetailsEvent {
+  final int id;
+  GetProductDetails(this.id);
+}

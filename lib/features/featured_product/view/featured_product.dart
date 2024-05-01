@@ -12,7 +12,7 @@ class FeaturedProduct extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            SearchBox(enabled: true),
+            SearchBox(),
             Container(
               decoration: BoxDecoration(
                 color: AppColors.off_grey,
