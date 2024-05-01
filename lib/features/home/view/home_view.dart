@@ -1,7 +1,7 @@
 part of 'widget/widgets.dart';
 
-class HomeView extends StatelessWidget {
-  const HomeView({super.key});
+class HomeScreen extends StatelessWidget {
+  const HomeScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -10,7 +10,7 @@ class HomeView extends StatelessWidget {
           HomeBloc(HomeRepoImplement())..add(GetHomeDataEvent()),
       child: Scaffold(
         appBar: PreferredSize(
-          preferredSize: Size.fromHeight(70.h),
+          preferredSize: Size.fromHeight(51.h),
           child: Column(
             children: [
               AppBar(
