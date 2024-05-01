@@ -1,11 +1,13 @@
 import 'package:Buyify/core/helpers/functions.dart';
 import 'package:Buyify/core/utils/app_colors.dart';
 import 'package:Buyify/core/utils/app_text.dart';
-// import 'package:Buyify/features/category_view/view/widget/widgets.dart';
+import 'package:Buyify/features/category_view/view/widget/widgets.dart';
 import 'package:Buyify/features/featured_product/view/widgets/widgets.dart';
 import 'package:Buyify/features/home/bloc/home_bloc.dart';
 import 'package:Buyify/features/home/data/models/home_model.dart';
 import 'package:Buyify/features/home/data/repo/home_repo_impl.dart';
+import 'package:Buyify/features/product_details/view/widgets/widgets.dart';
+import 'package:Buyify/features/search_view/view/widgets/widgets.dart';
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
