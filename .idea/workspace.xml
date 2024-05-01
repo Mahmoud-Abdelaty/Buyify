@@ -5,23 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b74bfcc6-e980-4aff-bea4-fedd4bf9fd11" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/lib/core/common/error_satet.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/core/common/loading_state.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/features/product_details/data/repo/product_details_repo.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/features/product_details/data/repo/product_details_repo_impl.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Flutter_Plugins.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Flutter_Plugins.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/core/common/search_box.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/core/common/search_box.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/features/category_view/view/category_view.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/features/category_view/view/category_view.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/features/category_view/view/widget/widgets.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/features/category_view/view/widget/widgets.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/features/featured_product/view/featured_product.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/features/featured_product/view/featured_product.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/features/home/view/home_view.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/features/home/view/home_view.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/features/home/view/widget/widgets.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/features/home/view/widget/widgets.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/features/product_details/bloc/product_details_bloc.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/features/product_details/bloc/product_details_bloc.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/features/product_details/bloc/product_details_event.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/features/product_details/bloc/product_details_event.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/features/product_details/bloc/product_details_state.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/features/product_details/bloc/product_details_state.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/features/product_details/view/product_view.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/features/product_details/view/product_view.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/features/product_details/view/widgets/widgets.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/features/product_details/view/widgets/widgets.dart" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,13 +13,6 @@
   </component>
   <component name="ClangdSettings">
     <option name="formatViaClangd" value="false" />
-  </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="Dart File" />
-      </list>
-    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -59,7 +35,6 @@
     "cf.first.check.clang-format": "false",
     "cidr.known.project.marker": "true",
     "dart.analysis.tool.window.visible": "false",
-    "git-widget-placeholder": "feature/product-details",
     "io.flutter.reload.alreadyRun": "true",
     "show.migrate.to.gradle.popup": "false"
   }
