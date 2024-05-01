@@ -11,11 +11,11 @@ class ItemBox extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
-      // onTap: () => Navigator.push(
-      //     context,
-      //     MaterialPageRoute(
-      //       builder: (context) => const ProductDetails(),
-      //     )),
+      onTap: () => Navigator.push(
+          context,
+          MaterialPageRoute(
+            builder: (context) => const ProductDetails(),
+          )),
       child: Container(
         width: 156.w,
         decoration: BoxDecoration(

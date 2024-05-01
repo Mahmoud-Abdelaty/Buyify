@@ -14,13 +14,12 @@ class ProductSection extends StatelessWidget {
       children: [
         TitleSections(
           title: 'Featured Product',
-          onPressed: () => print('Show ALl'),
-          //     Navigator.push(
-          //   context,
-          //   MaterialPageRoute(
-          //     builder: (context) => FeaturedProduct(productsList: productList),
-          //   ),
-          // ),
+          onPressed: () => Navigator.push(
+            context,
+            MaterialPageRoute(
+              builder: (context) => FeaturedProduct(productsList: productList),
+            ),
+          ),
         ),
         SizedBox(
           height: 245.h,
