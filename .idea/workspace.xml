@@ -54,7 +54,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="home" />
+        <entry key="$PROJECT_DIR$" value="feature/home" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -78,7 +78,7 @@
     "cf.first.check.clang-format": "false",
     "cidr.known.project.marker": "true",
     "dart.analysis.tool.window.visible": "false",
-    "git-widget-placeholder": "feature/home",
+    "git-widget-placeholder": "feature/featured-product",
     "io.flutter.reload.alreadyRun": "true",
     "last_opened_file_path": "D:/GitHub/Buyify/lib/features",
     "show.migrate.to.gradle.popup": "false"
