@@ -29,7 +29,9 @@ class SearchView extends StatelessWidget {
                 ] else if (state is SearchLoading) ...[
                   const Text('Loading...'),
                 ] else ...[
-                  const Text('No results found'),
+                  Container(
+                    height: 150.h,
+                  ),
                 ]
               ],
             );

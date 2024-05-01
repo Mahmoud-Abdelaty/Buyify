@@ -1,111 +1,104 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<project version="4">
-  <component name="AndroidLayouts">
-    <shared>
-      <config />
-    </shared>
-  </component>
-  <component name="AutoImportSettings">
-    <option name="autoReloadType" value="NONE" />
-  </component>
-  <component name="ChangeListManager">
-    <list default="true" id="b74bfcc6-e980-4aff-bea4-fedd4bf9fd11" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/assets/images/error_animation.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/core/common/custom_appBar.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/core/common/item_box.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/core/common/line_separate.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/core/common/search_box.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/features/home/bloc/home_bloc.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/features/home/bloc/home_event.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/features/home/bloc/home_state.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/features/home/data/models/banner_model.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/features/home/data/models/category_model.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/features/home/data/models/home_model.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/features/home/data/models/product_model.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/features/home/data/repo/home_repo.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/features/home/data/repo/home_repo_impl.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/features/home/view/home_view.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/features/home/view/widget/all_categories.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/features/home/view/widget/banners.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/features/home/view/widget/category_section.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/features/home/view/widget/dialog_product_action.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/features/home/view/widget/image_box.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/features/home/view/widget/products_section.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/features/home/view/widget/title_sections.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/features/home/view/widget/widgets.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/main.dart" afterDir="false" />
-    </list>
-    <option name="SHOW_DIALOG" value="false" />
-    <option name="HIGHLIGHT_CONFLICTS" value="true" />
-    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
-    <option name="LAST_RESOLUTION" value="IGNORE" />
-  </component>
-  <component name="ClangdSettings">
-    <option name="formatViaClangd" value="false" />
-  </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="Dart File" />
-      </list>
-    </option>
-  </component>
-  <component name="Git.Settings">
-    <option name="RECENT_BRANCH_BY_REPOSITORY">
-      <map>
-        <entry key="$PROJECT_DIR$" value="feature/home" />
-      </map>
-    </option>
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-  </component>
-  <component name="MarkdownSettingsMigration">
-    <option name="stateVersion" value="1" />
-  </component>
-  <component name="ProjectId" id="2e8kMtwfFNNfP7Tcl1oUbDy1I8k" />
-  <component name="ProjectLevelVcsManager">
-    <ConfirmationsSetting value="2" id="Add" />
-  </component>
-  <component name="ProjectViewState">
-    <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showLibraryContents" value="true" />
-  </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.cidr.known.project.marker": "true",
-    "cf.first.check.clang-format": "false",
-    "cidr.known.project.marker": "true",
-    "dart.analysis.tool.window.visible": "false",
-    "git-widget-placeholder": "feature/featured-product",
-    "io.flutter.reload.alreadyRun": "true",
-    "last_opened_file_path": "D:/GitHub/Buyify/lib/features",
-    "show.migrate.to.gradle.popup": "false"
-  }
-}]]></component>
-  <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\GitHub\Buyify\lib\features" />
-      <recent name="D:\GitHub\Buyify\lib\core" />
-      <recent name="D:\GitHub\Buyify\assets" />
-      <recent name="C:\Users\DELL\Documents\GitHub\E-Commerce\android\app\src\main\res" />
-      <recent name="C:\Users\DELL\Documents\GitHub\E-Commerce\web\icons" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\DELL\Documents\GitHub\Buyify\assets\fonts" />
-      <recent name="C:\Users\DELL\Documents\GitHub\E-Commerce\web" />
-    </key>
-  </component>
-  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
-  <component name="TaskManager">
-    <task active="true" id="Default" summary="Default task">
-      <changelist id="b74bfcc6-e980-4aff-bea4-fedd4bf9fd11" name="Changes" comment="" />
-      <created>1711293553558</created>
-      <option name="number" value="Default" />
-      <option name="presentableId" value="Default" />
-      <updated>1711293553558</updated>
-    </task>
-    <servers />
-  </component>
-</project>
+<!--<?xml version="1.0" encoding="UTF-8"?>-->
+<!--<project version="4">-->
+<!--  <component name="AndroidLayouts">-->
+<!--    <shared>-->
+<!--      <config />-->
+<!--    </shared>-->
+<!--  </component>-->
+<!--  <component name="AutoImportSettings">-->
+<!--    <option name="autoReloadType" value="NONE" />-->
+<!--  </component>-->
+<!--  <component name="ChangeListManager">-->
+<!--    <list default="true" id="b74bfcc6-e980-4aff-bea4-fedd4bf9fd11" name="Changes" comment="">-->
+<!--      <change afterPath="$PROJECT_DIR$/lib/features/category_view/bloc/category_bloc.dart" afterDir="false" />-->
+<!--      <change afterPath="$PROJECT_DIR$/lib/features/category_view/bloc/category_event.dart" afterDir="false" />-->
+<!--      <change afterPath="$PROJECT_DIR$/lib/features/category_view/bloc/category_state.dart" afterDir="false" />-->
+<!--      <change afterPath="$PROJECT_DIR$/lib/features/category_view/data/repo/category_repo.dart" afterDir="false" />-->
+<!--      <change afterPath="$PROJECT_DIR$/lib/features/category_view/data/repo/category_repo_impl.dart" afterDir="false" />-->
+<!--      <change afterPath="$PROJECT_DIR$/lib/features/category_view/view/category_view.dart" afterDir="false" />-->
+<!--      <change afterPath="$PROJECT_DIR$/lib/features/category_view/view/widget/widgets.dart" afterDir="false" />-->
+<!--      <change afterPath="$PROJECT_DIR$/lib/features/product_details/bloc/product_details_bloc.dart" afterDir="false" />-->
+<!--      <change afterPath="$PROJECT_DIR$/lib/features/product_details/bloc/product_details_event.dart" afterDir="false" />-->
+<!--      <change afterPath="$PROJECT_DIR$/lib/features/product_details/bloc/product_details_state.dart" afterDir="false" />-->
+<!--      <change afterPath="$PROJECT_DIR$/lib/features/product_details/view/product_view.dart" afterDir="false" />-->
+<!--      <change afterPath="$PROJECT_DIR$/lib/features/product_details/view/widgets/widgets.dart" afterDir="false" />-->
+<!--      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />-->
+<!--      <change beforePath="$PROJECT_DIR$/lib/core/common/item_box.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/core/common/item_box.dart" afterDir="false" />-->
+<!--      <change beforePath="$PROJECT_DIR$/lib/core/common/search_box.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/core/common/search_box.dart" afterDir="false" />-->
+<!--      <change beforePath="$PROJECT_DIR$/lib/features/home/view/widget/all_categories.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/features/home/view/widget/all_categories.dart" afterDir="false" />-->
+<!--      <change beforePath="$PROJECT_DIR$/lib/features/home/view/widget/category_section.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/features/home/view/widget/category_section.dart" afterDir="false" />-->
+<!--      <change beforePath="$PROJECT_DIR$/lib/features/home/view/widget/widgets.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/features/home/view/widget/widgets.dart" afterDir="false" />-->
+<!--    </list>-->
+<!--    <option name="SHOW_DIALOG" value="false" />-->
+<!--    <option name="HIGHLIGHT_CONFLICTS" value="true" />-->
+<!--    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />-->
+<!--    <option name="LAST_RESOLUTION" value="IGNORE" />-->
+<!--  </component>-->
+<!--  <component name="ClangdSettings">-->
+<!--    <option name="formatViaClangd" value="false" />-->
+<!--  </component>-->
+<!--  <component name="FileTemplateManagerImpl">-->
+<!--    <option name="RECENT_TEMPLATES">-->
+<!--      <list>-->
+<!--        <option value="Dart File" />-->
+<!--      </list>-->
+<!--    </option>-->
+<!--  </component>-->
+<!--  <component name="Git.Settings">-->
+<!--    <option name="RECENT_BRANCH_BY_REPOSITORY">-->
+<!--      <map>-->
+<!--        <entry key="$PROJECT_DIR$" value="feature/category" />-->
+<!--      </map>-->
+<!--    </option>-->
+<!--    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />-->
+<!--  </component>-->
+<!--  <component name="MarkdownSettingsMigration">-->
+<!--    <option name="stateVersion" value="1" />-->
+<!--  </component>-->
+<!--  <component name="ProjectId" id="2e8kMtwfFNNfP7Tcl1oUbDy1I8k" />-->
+<!--  <component name="ProjectLevelVcsManager">-->
+<!--    <ConfirmationsSetting value="2" id="Add" />-->
+<!--  </component>-->
+<!--  <component name="ProjectViewState">-->
+<!--    <option name="hideEmptyMiddlePackages" value="true" />-->
+<!--    <option name="showLibraryContents" value="true" />-->
+<!--  </component>-->
+<!--  <component name="PropertiesComponent"><![CDATA[{-->
+<!--  "keyToString": {-->
+<!--    "RunOnceActivity.OpenProjectViewOnStart": "true",-->
+<!--    "RunOnceActivity.ShowReadmeOnStart": "true",-->
+<!--    "RunOnceActivity.cidr.known.project.marker": "true",-->
+<!--    "cf.first.check.clang-format": "false",-->
+<!--    "cidr.known.project.marker": "true",-->
+<!--    "dart.analysis.tool.window.visible": "false",-->
+<!--    "git-widget-placeholder": "feature/product-details",-->
+<!--    "io.flutter.reload.alreadyRun": "true",-->
+<!--    "last_opened_file_path": "D:/GitHub/Buyify/lib/features",-->
+<!--    "show.migrate.to.gradle.popup": "false"-->
+<!--  }-->
+<!--}]]></component>-->
+<!--  <component name="RecentsManager">-->
+<!--    <key name="CopyFile.RECENT_KEYS">-->
+<!--      <recent name="D:\GitHub\Buyify\lib\features" />-->
+<!--      <recent name="D:\GitHub\Buyify\lib\core" />-->
+<!--      <recent name="D:\GitHub\Buyify\assets" />-->
+<!--      <recent name="C:\Users\DELL\Documents\GitHub\E-Commerce\android\app\src\main\res" />-->
+<!--      <recent name="C:\Users\DELL\Documents\GitHub\E-Commerce\web\icons" />-->
+<!--    </key>-->
+<!--    <key name="MoveFile.RECENT_KEYS">-->
+<!--      <recent name="C:\Users\DELL\Documents\GitHub\Buyify\assets\fonts" />-->
+<!--      <recent name="C:\Users\DELL\Documents\GitHub\E-Commerce\web" />-->
+<!--    </key>-->
+<!--  </component>-->
+<!--  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />-->
+<!--  <component name="TaskManager">-->
+<!--    <task active="true" id="Default" summary="Default task">-->
+<!--      <changelist id="b74bfcc6-e980-4aff-bea4-fedd4bf9fd11" name="Changes" comment="" />-->
+<!--      <created>1711293553558</created>-->
+<!--      <option name="number" value="Default" />-->
+<!--      <option name="presentableId" value="Default" />-->
+<!--      <updated>1711293553558</updated>-->
+<!--    </task>-->
+<!--    <servers />-->
+<!--  </component>-->
+<!--</project>-->

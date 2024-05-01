@@ -15,34 +15,33 @@ class CategorySection extends StatelessWidget {
               children: [
                 TitleSections(
                   title: 'Categories',
-                  onPressed: () => print('ss'),
-                  //       showGeneralDialog(
-                  //     barrierLabel: "Product Action",
-                  //     barrierDismissible: true,
-                  //     transitionDuration: const Duration(milliseconds: 700),
-                  //     context: context,
-                  //     pageBuilder: (context, anim1, anim2) {
-                  //       return Align(
-                  //         alignment: Alignment.bottomCenter,
-                  //         child: Container(
-                  //             decoration: BoxDecoration(
-                  //                 color: Colors.white,
-                  //                 borderRadius: BorderRadius.circular(10.r)),
-                  //             margin: EdgeInsets.only(
-                  //                 bottom: 20.h, left: 20.w, right: 20.w),
-                  //             child: AllCategories(categoriesList: state.data)),
-                  //       );
-                  //     },
-                  //     transitionBuilder: (context, anim1, anim2, child) {
-                  //       return SlideTransition(
-                  //         position: Tween(
-                  //                 begin: const Offset(0, 1),
-                  //                 end: const Offset(0, 0))
-                  //             .animate(anim1),
-                  //         child: child,
-                  //       );
-                  //     },
-                  //   ),
+                  onPressed: () => showGeneralDialog(
+                    barrierLabel: "Product Action",
+                    barrierDismissible: true,
+                    transitionDuration: const Duration(milliseconds: 700),
+                    context: context,
+                    pageBuilder: (context, anim1, anim2) {
+                      return Align(
+                        alignment: Alignment.bottomCenter,
+                        child: Container(
+                            decoration: BoxDecoration(
+                                color: Colors.white,
+                                borderRadius: BorderRadius.circular(10.r)),
+                            margin: EdgeInsets.only(
+                                bottom: 20.h, left: 20.w, right: 20.w),
+                            child: AllCategories(categoriesList: state.data)),
+                      );
+                    },
+                    transitionBuilder: (context, anim1, anim2, child) {
+                      return SlideTransition(
+                        position: Tween(
+                                begin: const Offset(0, 1),
+                                end: const Offset(0, 0))
+                            .animate(anim1),
+                        child: child,
+                      );
+                    },
+                  ),
                 ),
                 SizedBox(
                   height: 120.h,
@@ -50,16 +49,15 @@ class CategorySection extends StatelessWidget {
                     padding: EdgeInsets.symmetric(horizontal: 20.w),
                     scrollDirection: Axis.horizontal,
                     itemBuilder: (context, index) => GestureDetector(
-                      onTap: () => print('ss'),
-                      // Navigator.push(
-                      // context,
-                      // MaterialPageRoute(
-                      //   builder: (context) => CategoryView(
-                      //     id: state.data[index].id,
-                      //     title:
-                      //         convertToPascalCase(state.data[index].name),
-                      //   ),
-                      // )),
+                      onTap: () => Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) => CategoryView(
+                              id: state.data[index].id,
+                              title:
+                                  convertToPascalCase(state.data[index].name),
+                            ),
+                          )),
                       child: SizedBox(
                         child: Column(
                           children: [
