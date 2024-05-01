@@ -84,8 +84,7 @@ class HomeView extends StatelessWidget {
                 color: AppColors.blue_ocean,
               ));
             } else {
-              return Center(
-                  child: Lottie.asset('assets/images/error_animation.json'));
+              return const ErrorState();
             }
           },
         ),
