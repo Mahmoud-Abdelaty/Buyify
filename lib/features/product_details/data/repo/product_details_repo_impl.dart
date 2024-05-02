@@ -13,7 +13,7 @@ class ProductDetailsRepoImplement implements ProductDetailsRepo {
       var result = await NetworkHelper.instance
           .get(endPoint: EndPoints.ProductDetails(id));
 
-      var json = result.data['data']['data'];
+      var json = result.data['data'];
 
       var data = ProductModel.fromJson(json);
 

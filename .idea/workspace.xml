@@ -5,23 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b74bfcc6-e980-4aff-bea4-fedd4bf9fd11" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/lib/core/common/error_satet.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/core/common/loading_state.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/features/product_details/data/repo/product_details_repo.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/features/product_details/data/repo/product_details_repo_impl.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Flutter_Plugins.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Flutter_Plugins.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/features/product_details/view/widgets/images_slider.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/features/product_details/view/widgets/product_main_info.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Dart_Packages.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Dart_Packages.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/core/common/search_box.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/core/common/search_box.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/features/category_view/view/category_view.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/features/category_view/view/category_view.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/features/category_view/view/widget/widgets.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/features/category_view/view/widget/widgets.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/features/featured_product/view/featured_product.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/features/featured_product/view/featured_product.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/features/home/view/home_view.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/features/home/view/home_view.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/features/home/view/widget/widgets.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/features/home/view/widget/widgets.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/features/product_details/bloc/product_details_bloc.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/features/product_details/bloc/product_details_bloc.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/features/product_details/bloc/product_details_event.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/features/product_details/bloc/product_details_event.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/features/product_details/bloc/product_details_state.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/features/product_details/bloc/product_details_state.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/core/common/item_box.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/core/common/item_box.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/features/home/view/widget/image_box.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/features/home/view/widget/image_box.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/features/product_details/data/repo/product_details_repo_impl.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/features/product_details/data/repo/product_details_repo_impl.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/features/product_details/view/product_view.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/features/product_details/view/product_view.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/features/product_details/view/widgets/widgets.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/features/product_details/view/widgets/widgets.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,18 +45,18 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.cidr.known.project.marker": "true",
-    "cf.first.check.clang-format": "false",
-    "cidr.known.project.marker": "true",
-    "dart.analysis.tool.window.visible": "false",
-    "git-widget-placeholder": "feature/product-details",
-    "io.flutter.reload.alreadyRun": "true",
-    "show.migrate.to.gradle.popup": "false"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;cf.first.check.clang-format&quot;: &quot;false&quot;,
+    &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;dart.analysis.tool.window.visible&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;feature/product-details&quot;,
+    &quot;io.flutter.reload.alreadyRun&quot;: &quot;true&quot;,
+    &quot;show.migrate.to.gradle.popup&quot;: &quot;false&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\GitHub\Buyify\lib\features" />
