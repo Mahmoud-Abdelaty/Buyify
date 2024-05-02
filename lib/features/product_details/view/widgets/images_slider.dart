@@ -6,42 +6,37 @@ class ImagesSlider extends StatelessWidget {
   final List<String> imagesList;
   @override
   Widget build(BuildContext context) {
-    return Padding(
-      padding: EdgeInsets.symmetric(horizontal: 25.w, vertical: 25.h),
-      child: CarouselSlider.builder(
-        itemCount: imagesList.length,
-        itemBuilder: (BuildContext context, int itemIndex, int pageViewIndex) {
-          return Container(
-            width: 325.w,
-            alignment: AlignmentDirectional.center,
-            child: Stack(
-              children: [
-                ImageBox(
-                  width: 300.h,
-                  height: 280.h,
-                  imageUrl: imagesList[itemIndex],
-                ),
-                Positioned(
-                    bottom: 0.h,
-                    left: 10.w,
-                    child: Text(
-                      '${itemIndex + 1}/${(imagesList.length)}',
-                      style: AppTextStyle.medium(
-                        fontSize: 15.sp,
-                      ),
-                    )),
-              ],
-            ),
-          );
-        },
-        options: CarouselOptions(
-          height: 310.h,
-          viewportFraction: 1,
-          enableInfiniteScroll: true,
-          autoPlay: true,
-          autoPlayCurve: Curves.linear,
-          enlargeCenterPage: true,
-        ),
+    return CarouselSlider.builder(
+      itemCount: imagesList.length,
+      itemBuilder: (BuildContext context, int itemIndex, int pageViewIndex) {
+        return Container(
+          alignment: AlignmentDirectional.center,
+          child: Stack(
+            children: [
+              ImageBox(
+                height: 280.h,
+                imageUrl: imagesList[itemIndex],
+              ),
+              Positioned(
+                  bottom: 0.h,
+                  left: 10.w,
+                  child: Text(
+                    '${itemIndex + 1}/${(imagesList.length)}',
+                    style: AppTextStyle.medium(
+                      fontSize: 15.sp,
+                    ),
+                  )),
+            ],
+          ),
+        );
+      },
+      options: CarouselOptions(
+        height: 310.h,
+        viewportFraction: 1,
+        enableInfiniteScroll: true,
+        autoPlay: true,
+        autoPlayCurve: Curves.linear,
+        enlargeCenterPage: true,
       ),
     );
 
