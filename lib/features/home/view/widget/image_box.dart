@@ -1,14 +1,18 @@
 part of 'widgets.dart';
 
 class ImageBox extends StatelessWidget {
-  const ImageBox({super.key, required this.imageUrl});
+  ImageBox(
+      {super.key, required this.imageUrl, this.width = 315, this.height = 150});
 
   final String imageUrl;
+  double width;
+  double height;
+
   @override
   Widget build(BuildContext context) {
     return SizedBox(
-      width: 315.w,
-      height: 150.h,
+      width: width.w,
+      height: height.h,
       child: ClipRRect(
         borderRadius: BorderRadius.circular(10.r),
         child: CachedNetworkImage(

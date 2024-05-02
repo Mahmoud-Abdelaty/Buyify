@@ -14,7 +14,7 @@ class ItemBox extends StatelessWidget {
       onTap: () => Navigator.push(
           context,
           MaterialPageRoute(
-            builder: (context) => const ProductDetails(),
+            builder: (context) => ProductDetails(productId: productModel.id),
           )),
       child: Container(
         width: 156.w,
