@@ -5,6 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b74bfcc6-e980-4aff-bea4-fedd4bf9fd11" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/lib/features/product_details/view/widgets/custom_buttons.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/features/product_details/view/product_view.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/features/product_details/view/product_view.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/features/product_details/view/widgets/images_slider.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/features/product_details/view/widgets/images_slider.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/features/product_details/view/widgets/product_main_info.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/features/product_details/view/widgets/product_main_info.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/features/product_details/view/widgets/widgets.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/features/product_details/view/widgets/widgets.dart" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -13,6 +19,13 @@
   </component>
   <component name="ClangdSettings">
     <option name="formatViaClangd" value="false" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Dart File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
