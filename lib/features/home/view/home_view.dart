@@ -81,7 +81,7 @@ class HomeScreen extends StatelessWidget {
             } else if (state is HomeLoading) {
               return LoadingState();
             } else {
-              return ErrorState();
+              return const ErrorState();
             }
           },
         ),
