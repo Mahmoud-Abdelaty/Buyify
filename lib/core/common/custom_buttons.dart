@@ -38,6 +38,7 @@ class _CustomButtonsState extends State<CustomButtons> {
         height: isTapped ? widget.height.w - 1.h : widget.height.h,
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(10.r),
+          border: Border.all(color: Colors.black),
           color: widget.color,
           boxShadow: [
             BoxShadow(
