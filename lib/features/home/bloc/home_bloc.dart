@@ -17,7 +17,9 @@ class HomeBloc extends Bloc<HomeEvent, HomeState> {
         var result = await homeRepo.fetchHomeData();
         result.fold(
           (failure) => emit(HomeError()),
-          (banners) => emit(HomeSuccess(banners)),
+          (banners) {
+            emit(HomeSuccess(banners));
+          },
         );
       } catch (e) {
         emit(HomeError());
