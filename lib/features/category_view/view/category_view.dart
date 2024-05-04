@@ -95,6 +95,7 @@ class _CategoryViewState extends State<CategoryView> {
         floatingActionButton: CustomButtons(
           color: Colors.white,
           width: 300.w,
+          border: Border.all(color: Colors.black),
           child: Center(
               child: Text(
             'Filter & Sorting',

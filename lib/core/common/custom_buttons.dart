@@ -2,19 +2,20 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class CustomButtons extends StatefulWidget {
-  const CustomButtons({
+  CustomButtons({
     super.key,
     required this.color,
     required this.child,
     this.width = 153,
     this.height = 50,
+    this.border,
   });
 
   final Color color;
   final Widget child;
   final double width;
   final double height;
-
+  final BoxBorder? border;
   @override
   State<CustomButtons> createState() => _CustomButtonsState();
 }
@@ -38,7 +39,7 @@ class _CustomButtonsState extends State<CustomButtons> {
         height: isTapped ? widget.height.w - 1.h : widget.height.h,
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(10.r),
-          border: Border.all(color: Colors.black),
+          border: widget.border,
           color: widget.color,
           boxShadow: [
             BoxShadow(
