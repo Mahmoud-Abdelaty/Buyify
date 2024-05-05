@@ -5,9 +5,25 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b74bfcc6-e980-4aff-bea4-fedd4bf9fd11" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/lib/features/category_view/view/widget/dialog_filtering&amp;sorting.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/features/product_details/data/models/Favorite_Model.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Dart_Packages.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Dart_Packages.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/core/common/custom_buttons.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/core/common/custom_buttons.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/core/network/endpoints.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/core/network/endpoints.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/core/network/network_helper.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/core/network/network_helper.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/features/category_view/view/category_view.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/features/category_view/view/category_view.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/features/category_view/view/widget/widgets.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/features/category_view/view/widget/widgets.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/features/home/data/models/product_model.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/features/home/data/models/product_model.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/features/product_details/bloc/product_details_bloc.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/features/product_details/bloc/product_details_bloc.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/features/product_details/bloc/product_details_event.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/features/product_details/bloc/product_details_event.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/features/product_details/bloc/product_details_state.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/features/product_details/bloc/product_details_state.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/features/product_details/data/repo/product_details_repo.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/features/product_details/data/repo/product_details_repo.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/features/product_details/data/repo/product_details_repo_impl.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/features/product_details/data/repo/product_details_repo_impl.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/features/product_details/view/product_view.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/features/product_details/view/product_view.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/features/product_details/view/widgets/action_buttons.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/features/product_details/view/widgets/action_buttons.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/features/product_details/view/widgets/widgets.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/features/product_details/view/widgets/widgets.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

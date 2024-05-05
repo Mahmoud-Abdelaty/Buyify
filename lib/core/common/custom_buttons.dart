@@ -9,6 +9,7 @@ class CustomButtons extends StatefulWidget {
     this.width = 153,
     this.height = 50,
     this.border,
+    this.onTap,
   });
 
   final Color color;
@@ -16,6 +17,7 @@ class CustomButtons extends StatefulWidget {
   final double width;
   final double height;
   final BoxBorder? border;
+  Function()? onTap;
   @override
   State<CustomButtons> createState() => _CustomButtonsState();
 }
@@ -25,7 +27,7 @@ class _CustomButtonsState extends State<CustomButtons> {
   @override
   Widget build(BuildContext context) {
     return InkWell(
-      onTap: () {},
+      onTap: widget.onTap,
       highlightColor: Colors.transparent,
       splashColor: Colors.transparent,
       onHighlightChanged: (value) {

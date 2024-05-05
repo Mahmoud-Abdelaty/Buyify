@@ -7,3 +7,8 @@ class GetProductDetails extends ProductDetailsEvent {
   final int id;
   GetProductDetails(this.id);
 }
+
+class AddProductFav extends ProductDetailsEvent {
+  final int id;
+  AddProductFav(this.id);
+}

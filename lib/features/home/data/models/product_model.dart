@@ -26,19 +26,19 @@ class ProductModel {
   });
 
   factory ProductModel.fromJson(Map<String, dynamic> json) {
-    List<dynamic> imageList = json['images'];
+    List<dynamic> imageList = json['images'] ?? [];
 
     return ProductModel(
-      id: json['id'],
+      id: json['id'] ?? 0,
       price: json['price'] ?? 0,
       oldPrice: json['old_price'] ?? 0,
       discount: json['discount'] ?? 0,
-      image: json['image'],
-      name: json['name'],
-      description: json['description'],
+      image: json['image'] ?? '',
+      name: json['name'] ?? '',
+      description: json['description'] ?? '',
       images: imageList.map((item) => item.toString()).toList(),
-      inFavorites: json['in_favorites'],
-      inCart: json['in_cart'],
+      inFavorites: json['in_favorites'] ?? false,
+      inCart: json['in_cart'] ?? false,
     );
   }
 }

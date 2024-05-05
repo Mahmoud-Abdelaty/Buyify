@@ -9,6 +9,8 @@ import 'package:Buyify/features/home/data/repo/home_repo_impl.dart';
 import 'package:Buyify/features/home/view/widget/widgets.dart';
 import 'package:Buyify/features/product_details/bloc/product_details_bloc.dart';
 import 'package:Buyify/features/product_details/data/repo/product_details_repo_impl.dart';
+import 'package:animated_loading_indicators/animated_loading_indicators.dart';
+import 'package:awesome_snackbar_content/awesome_snackbar_content.dart';
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
