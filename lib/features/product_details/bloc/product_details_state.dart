@@ -13,3 +13,12 @@ class ProductDetailsSuccess extends ProductDetailsState {
 }
 
 class ProductDetailsError extends ProductDetailsState {}
+
+class ProductAddedFavLoading extends ProductDetailsState {}
+
+class ProductAddedFavSuccess extends ProductDetailsState {
+  final FavoriteModel data;
+  ProductAddedFavSuccess(this.data);
+}
+
+class ProductAddedFavFailed extends ProductDetailsState {}
