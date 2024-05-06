@@ -12,3 +12,8 @@ class AddProductFav extends ProductDetailsEvent {
   final int id;
   AddProductFav(this.id);
 }
+
+class AddProductToCart extends ProductDetailsEvent {
+  final int id;
+  AddProductToCart(this.id);
+}

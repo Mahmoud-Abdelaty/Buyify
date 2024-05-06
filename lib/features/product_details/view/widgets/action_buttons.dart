@@ -1,9 +1,11 @@
 part of 'widgets.dart';
 
 class ActionButtons extends StatelessWidget {
-  const ActionButtons({super.key, required this.productId});
+  const ActionButtons(
+      {super.key, required this.productId, required this.inFavorite});
 
   final int productId;
+  final bool inFavorite;
 
   @override
   Widget build(BuildContext context) {
@@ -16,33 +18,29 @@ class ActionButtons extends StatelessWidget {
           children: [
             BlocBuilder<ProductDetailsBloc, ProductDetailsState>(
               builder: (context, state) {
+                if (state is ProductAddedFavSuccess) {
+                  _showSnackBar(
+                    context: context,
+                    title: state.data.status ? 'Success' : 'Failed',
+                    message: state.data.status
+                        ? '${state.data.message} Favorite'
+                        : state.data.message,
+                    contentType: state.data.status
+                        ? ContentType.success
+                        : ContentType.warning,
+                  );
+                } else if (state is ProductAddedFavFailed) {
+                  _showSnackBar(
+                    context: context,
+                    title: 'Not Done',
+                    message: 'Not Done',
+                    contentType: ContentType.failure,
+                  );
+                }
                 return CustomButtons(
                   color: AppColors.dark_red,
-                  onTap: () {
-                    BlocProvider.of<ProductDetailsBloc>(context)
-                        .add(AddProductFav(100));
-                    if (state is ProductAddedFavSuccess) {
-                      ScaffoldMessenger.of(context).showSnackBar(SnackBar(
-                        backgroundColor: Colors.transparent,
-                        elevation: 0,
-                        content: AwesomeSnackbarContent(
-                          title: 'Done',
-                          message: state.data.message,
-                          contentType: ContentType.success,
-                        ),
-                      ));
-                    } else if (state is ProductAddedFavFailed) {
-                      ScaffoldMessenger.of(context).showSnackBar(SnackBar(
-                        backgroundColor: Colors.transparent,
-                        elevation: 0,
-                        content: AwesomeSnackbarContent(
-                          title: 'Not Done',
-                          message: 'Not Done',
-                          contentType: ContentType.failure,
-                        ),
-                      ));
-                    }
-                  },
+                  onTap: () => BlocProvider.of<ProductDetailsBloc>(context)
+                      .add(AddProductFav(productId)),
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                     children: [
@@ -70,21 +68,76 @@ class ActionButtons extends StatelessWidget {
               },
             ),
             SizedBox(width: 19.w),
-            CustomButtons(
-              color: AppColors.blue_ocean,
-              child: Center(
-                child: Text(
-                  'Add to Cart',
-                  style: AppTextStyle.medium(
-                    fontSize: 14.sp,
-                    color: AppColors.white,
+            BlocBuilder<ProductDetailsBloc, ProductDetailsState>(
+              builder: (context, state) {
+                if (state is ProductAddedToCartSuccess) {
+                  _showSnackBar(
+                    context: context,
+                    title: state.data.status ? 'Success' : 'Failed',
+                    message: state.data.status
+                        ? '${state.data.message} Chart'
+                        : state.data.message,
+                    contentType: state.data.status
+                        ? ContentType.success
+                        : ContentType.warning,
+                  );
+                } else if (state is ProductAddedToCartFailed) {
+                  _showSnackBar(
+                    context: context,
+                    title: 'Failed',
+                    message: 'Check Your Network',
+                    contentType: ContentType.failure,
+                  );
+                }
+                return CustomButtons(
+                  onTap: () => BlocProvider.of<ProductDetailsBloc>(context)
+                      .add(AddProductToCart(productId)),
+                  color: AppColors.blue_ocean,
+                  child: Center(
+                    child: state is ProductAddedToCartLoading
+                        ? const UpDownLoader(
+                            size: 4,
+                            duration: Duration(milliseconds: 200),
+                            firstColor: Colors.white,
+                          )
+                        : Text(
+                            'Add to Cart',
+                            style: AppTextStyle.medium(
+                              fontSize: 14.sp,
+                              color: AppColors.white,
+                            ),
+                          ),
                   ),
-                ),
-              ),
+                );
+              },
             ),
           ],
         ),
       ),
     );
+  }
+
+  void _showSnackBar({
+    required BuildContext context,
+    required String title,
+    required String message,
+    required ContentType contentType,
+  }) {
+    WidgetsBinding.instance.addPostFrameCallback((_) {
+      ScaffoldMessenger.of(context).showSnackBar(
+        SnackBar(
+          duration: const Duration(seconds: 2),
+          elevation: 0,
+          backgroundColor: Colors.transparent,
+          content: AwesomeSnackbarContent(
+            title: title,
+            message: message,
+            contentType: contentType,
+            messageFontSize: 14.sp,
+            titleFontSize: 18.sp,
+          ),
+        ),
+      );
+    });
   }
 }
