@@ -17,8 +17,17 @@ class ProductDetailsError extends ProductDetailsState {}
 class ProductAddedFavLoading extends ProductDetailsState {}
 
 class ProductAddedFavSuccess extends ProductDetailsState {
-  final FavoriteModel data;
+  final FavoritesModel data;
   ProductAddedFavSuccess(this.data);
 }
 
 class ProductAddedFavFailed extends ProductDetailsState {}
+
+class ProductAddedToCartLoading extends ProductDetailsState {}
+
+class ProductAddedToCartSuccess extends ProductDetailsState {
+  final AddToCartModel data;
+  ProductAddedToCartSuccess(this.data);
+}
+
+class ProductAddedToCartFailed extends ProductDetailsState {}

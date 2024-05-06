@@ -1,5 +1,6 @@
 import 'package:Buyify/features/home/data/models/home_model.dart';
-import 'package:Buyify/features/product_details/data/models/Favorite_Model.dart';
+import 'package:Buyify/features/product_details/data/models/addToCart_model.dart';
+import 'package:Buyify/features/product_details/data/models/favorites_model.dart';
 import 'package:Buyify/features/product_details/data/repo/product_details_repo.dart';
 import 'package:bloc/bloc.dart';
 import 'package:meta/meta.dart';
@@ -22,6 +23,7 @@ class ProductDetailsBloc
         emit(ProductDetailsError());
       }
     });
+
     on<AddProductFav>((event, emit) async {
       emit(ProductAddedFavLoading());
       try {
@@ -30,6 +32,17 @@ class ProductDetailsBloc
             (r) => emit(ProductAddedFavSuccess(r)));
       } catch (e) {
         emit(ProductAddedFavFailed());
+      }
+    });
+
+    on<AddProductToCart>((event, emit) async {
+      emit(ProductAddedToCartLoading());
+      try {
+        var result = await productDetailsRepo.addProductToCart(event.id);
+        result.fold((l) => emit(ProductAddedToCartFailed()),
+            (r) => emit(ProductAddedToCartSuccess(r)));
+      } catch (e) {
+        emit(ProductAddedToCartFailed());
       }
     });
   }

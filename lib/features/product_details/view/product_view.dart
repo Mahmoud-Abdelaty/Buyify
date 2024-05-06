@@ -1,9 +1,12 @@
 part of 'widgets/widgets.dart';
 
 class ProductDetails extends StatelessWidget {
-  const ProductDetails({Key? key, required this.productId}) : super(key: key);
+  const ProductDetails(
+      {Key? key, required this.productId, required this.inFavorite})
+      : super(key: key);
 
   final int productId;
+  final bool inFavorite;
 
   @override
   Widget build(BuildContext context) {
@@ -96,7 +99,8 @@ class ProductDetails extends StatelessWidget {
             }
           },
         ),
-        floatingActionButton: ActionButtons(productId: productId),
+        floatingActionButton:
+            ActionButtons(productId: productId, inFavorite: inFavorite),
       ),
     );
   }
