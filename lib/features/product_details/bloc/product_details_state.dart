@@ -31,3 +31,12 @@ class ProductAddedToCartSuccess extends ProductDetailsState {
 }
 
 class ProductAddedToCartFailed extends ProductDetailsState {}
+
+class GetFavoriteProductsLoading extends ProductDetailsState {}
+
+class GetFavoriteProductsSuccess extends ProductDetailsState {
+  final List<ProductFavModel> data;
+  GetFavoriteProductsSuccess(this.data);
+}
+
+class GetFavoriteProductsFailed extends ProductDetailsState {}
