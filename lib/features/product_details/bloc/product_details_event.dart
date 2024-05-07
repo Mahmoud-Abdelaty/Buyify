@@ -17,3 +17,5 @@ class AddProductToCart extends ProductDetailsEvent {
   final int id;
   AddProductToCart(this.id);
 }
+
+class GetFavoriteProducts extends ProductDetailsEvent {}

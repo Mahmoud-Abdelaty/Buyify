@@ -99,8 +99,7 @@ class ProductDetails extends StatelessWidget {
             }
           },
         ),
-        floatingActionButton:
-            ActionButtons(productId: productId, inFavorite: inFavorite),
+        floatingActionButton: ActionButtons(productId: productId),
       ),
     );
   }
