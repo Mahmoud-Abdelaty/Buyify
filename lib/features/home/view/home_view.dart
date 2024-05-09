@@ -11,41 +11,7 @@ class HomeScreen extends StatelessWidget {
       child: Scaffold(
         appBar: PreferredSize(
           preferredSize: Size.fromHeight(51.h),
-          child: Column(
-            children: [
-              AppBar(
-                centerTitle: true,
-                scrolledUnderElevation: 0,
-                title: Text(
-                  'Buyify',
-                  style: AppTextStyle.bold(
-                    fontSize: 18.sp,
-                    color: AppColors.blue_ocean,
-                  ),
-                ),
-                actions: [
-                  IconButton(
-                    onPressed: () {},
-                    icon: Icon(
-                      Iconic.bell_bold,
-                      size: 20.sp,
-                    ),
-                  ),
-                  Padding(
-                    padding: EdgeInsets.only(right: 10.w),
-                    child: IconButton(
-                      onPressed: () {},
-                      icon: Icon(
-                        Iconic.shopping_cart_bold,
-                        size: 20.sp,
-                      ),
-                    ),
-                  ),
-                ],
-              ),
-              const LineSeparate(),
-            ],
-          ),
+          child: const HomeAppBar(),
         ),
         body: BlocBuilder<HomeBloc, HomeState>(
           builder: (context, state) {
@@ -59,7 +25,7 @@ class HomeScreen extends StatelessWidget {
                     SizedBox(height: 5.h),
                     Container(
                       decoration: BoxDecoration(
-                        color: AppColors.off_grey,
+                        color: AppColors.alabaster,
                         borderRadius: BorderRadius.only(
                           topLeft: Radius.circular(10.r),
                           topRight: Radius.circular(10.r),
@@ -79,7 +45,7 @@ class HomeScreen extends StatelessWidget {
                 ),
               );
             } else if (state is HomeLoading) {
-              return LoadingState();
+              return const LoadingState();
             } else {
               return const ErrorState();
             }

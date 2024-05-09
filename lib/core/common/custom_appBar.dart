@@ -1,13 +1,21 @@
 part of '../../features/home/view/widget/widgets.dart';
 
 class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
-  CustomAppBar({super.key, required this.title, this.actions});
+  const CustomAppBar({
+    super.key,
+    required this.title,
+    required this.style,
+    this.actions,
+    this.leadingButton = true,
+  });
 
   @override
   Size get preferredSize => Size.fromHeight(51.h);
 
   final String title;
-  List<Widget>? actions;
+  final List<Widget>? actions;
+  final bool leadingButton;
+  final TextStyle style;
   @override
   Widget build(BuildContext context) {
     return Column(
@@ -17,15 +25,17 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
           scrolledUnderElevation: 0,
           title: Text(
             title,
-            style: AppTextStyle.medium(fontSize: 16.sp),
+            style: style,
           ),
-          leading: IconButton(
-            onPressed: () => Navigator.pop(context),
-            icon: Icon(
-              Iconic.angle_small_left,
-              size: 13.sp,
-            ),
-          ),
+          leading: leadingButton
+              ? IconButton(
+                  onPressed: () => Navigator.pop(context),
+                  icon: Icon(
+                    Iconic.angle_small_left,
+                    size: 13.sp,
+                  ),
+                )
+              : null,
           actions: actions,
         ),
         const LineSeparate(),

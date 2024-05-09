@@ -26,7 +26,7 @@ class SearchBox extends StatelessWidget {
           alignment: Alignment.center,
           padding: EdgeInsets.symmetric(horizontal: 10.w),
           decoration: BoxDecoration(
-            color: AppColors.off_grey,
+            color: AppColors.alabaster,
             borderRadius: BorderRadius.circular(10.r),
           ),
           child: TextField(

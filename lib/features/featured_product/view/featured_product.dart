@@ -7,7 +7,10 @@ class FeaturedProduct extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: CustomAppBar(title: 'Featured Product'),
+      appBar: CustomAppBar(
+        title: 'Featured Product',
+        style: AppTextStyle.medium(fontSize: 16.sp),
+      ),
       body: SingleChildScrollView(
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
@@ -15,7 +18,7 @@ class FeaturedProduct extends StatelessWidget {
             SearchBox(),
             Container(
               decoration: BoxDecoration(
-                color: AppColors.off_grey,
+                color: AppColors.alabaster,
                 borderRadius: BorderRadius.only(
                   topLeft: Radius.circular(10.r),
                   topRight: Radius.circular(10.r),

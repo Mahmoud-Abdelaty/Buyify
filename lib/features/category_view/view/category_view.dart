@@ -20,7 +20,10 @@ class _CategoryViewState extends State<CategoryView> {
       create: (context) => CategoryBloc(CategoryRepoImplement())
         ..add(GetCategoryData(widget.id)),
       child: Scaffold(
-        appBar: CustomAppBar(title: 'Category'),
+        appBar: CustomAppBar(
+          title: 'Category',
+          style: AppTextStyle.medium(fontSize: 16.sp),
+        ),
         body: BlocBuilder<CategoryBloc, CategoryState>(
           builder: (context, state) {
             if (state is GetCategorySuccess) {
@@ -59,7 +62,7 @@ class _CategoryViewState extends State<CategoryView> {
                       //       child: SearchBoxResult(productModel: list)),
                       Container(
                         decoration: BoxDecoration(
-                            color: AppColors.off_grey,
+                            color: AppColors.alabaster,
                             borderRadius: BorderRadius.only(
                                 topRight: Radius.circular(10.r),
                                 topLeft: Radius.circular(10.r))),

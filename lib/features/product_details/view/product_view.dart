@@ -1,12 +1,9 @@
 part of 'widgets/widgets.dart';
 
 class ProductDetails extends StatelessWidget {
-  const ProductDetails(
-      {Key? key, required this.productId, required this.inFavorite})
-      : super(key: key);
+  const ProductDetails({super.key, required this.productId});
 
   final int productId;
-  final bool inFavorite;
 
   @override
   Widget build(BuildContext context) {
@@ -24,6 +21,7 @@ class ProductDetails extends StatelessWidget {
       child: Scaffold(
         appBar: CustomAppBar(
           title: 'Detail Product',
+          style: AppTextStyle.medium(fontSize: 16.sp),
           actions: [
             Padding(
               padding: EdgeInsets.only(right: 10.w),

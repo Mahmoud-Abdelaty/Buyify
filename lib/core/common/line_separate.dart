@@ -7,7 +7,7 @@ class LineSeparate extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       height: 1.5.h,
-      color: AppColors.soft_grey,
+      color: AppColors.alabaster,
     );
   }
 }

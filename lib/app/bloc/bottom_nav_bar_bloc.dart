@@ -1,5 +1,5 @@
 import 'package:Buyify/features/home/view/widget/widgets.dart';
-import 'package:Buyify/features/search_view/view/widgets/widgets.dart';
+import 'package:Buyify/features/user_profile/view/widgets/widgets.dart';
 import 'package:bloc/bloc.dart';
 import 'package:flutter/cupertino.dart';
 
@@ -8,11 +8,11 @@ part 'bottom_nav_bar_state.dart';
 
 class BottomNavBarBloc extends Bloc<BottomNavBarEvent, BottomNavBarState> {
   int currentIndex = 0;
-  List<Widget> screensList = [
+  List<Widget> screensList = const [
     HomeScreen(),
     HomeScreen(),
     HomeScreen(),
-    SearchView(),
+    UserProfile(),
   ];
   BottomNavBarBloc() : super(BottomNavBarInitial()) {
     on<ChangeNavBar>((event, emit) {
