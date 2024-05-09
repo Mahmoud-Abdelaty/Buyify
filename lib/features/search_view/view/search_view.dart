@@ -10,6 +10,7 @@ class SearchView extends StatelessWidget {
       child: Scaffold(
         appBar: CustomAppBar(
           title: 'Search',
+          style: AppTextStyle.medium(fontSize: 16.sp),
         ),
         body: BlocBuilder<SearchBloc, SearchState>(
           builder: (context, state) {

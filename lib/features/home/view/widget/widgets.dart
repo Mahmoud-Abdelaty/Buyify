@@ -25,6 +25,7 @@ part '../home_view.dart';
 part 'banners.dart';
 part 'category_section.dart';
 part 'dialog_product_action.dart';
+part 'home_appBar.dart';
 part 'image_box.dart';
 part 'products_section.dart';
 part 'title_sections.dart';

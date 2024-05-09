@@ -15,9 +15,10 @@ class AppColors {
   static const dark_red = Color(0xffFE3A30);
   static const soft_red = Color(0xffFFECE8);
   static const grey = Color(0xffC4C5C4);
+  static const dark_grey = Color(0xffABABAB);
   static const half_grey = Color(0xff838589);
-  static const soft_grey = Color(0xffEDEDED);
-  static const off_grey = Color(0xffFAFAFA);
+  static const grey93 = Color(0xffEDEDED);
+  static const alabaster = Color(0xffFAFAFA);
   static const off_blue = Color(0xffEFF5FB);
   static const off_green = Color(0xffEEFAF6);
   static const off_red = Color(0xffFCECEF);
