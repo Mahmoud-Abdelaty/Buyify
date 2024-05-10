@@ -6,67 +6,59 @@ class UserProfile extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: PreferredSize(
-        preferredSize: Size.fromHeight(51.h),
-        child: const ProfileAppBar(),
-      ),
-      body: Center(
-        child: SingleChildScrollView(
-          child: Padding(
-            padding: EdgeInsets.symmetric(vertical: 25.h),
-            child: Column(
-              children: [
-                Padding(
-                  padding: EdgeInsets.symmetric(horizontal: 118.w),
-                  child: CircleAvatar(
-                    radius: 70.r,
-                  ),
+      body: CustomScrollView(
+        slivers: [
+          SliverAppBar(
+            backgroundColor: Colors.deepPurple,
+            expandedHeight: 210.h,
+            pinned: true,
+            flexibleSpace: FlexibleSpaceBar(
+              background: Padding(
+                padding: EdgeInsets.symmetric(horizontal: 118.w),
+                child: CircleAvatar(
+                  radius: 70.r,
                 ),
-                Text(
-                  'Mahmoud Abdelaty Hamed',
+              ),
+              title: Padding(
+                padding: EdgeInsets.only(top: 10.h, bottom: 0),
+                child: Text(
+                  'Mahmoud Abdelaty ',
                   textAlign: TextAlign.center,
                   style: AppTextStyle.semiBold(
                     color: AppColors.dark_blue,
-                    fontSize: 20.sp,
+                    fontSize: 18.sp,
                   ),
                 ),
-                SizedBox(height: 32.h),
-                Expanded(
-                  child: ListView.separated(
-                    itemBuilder: (context, index) => UserDataSection(
-                      title: 'Your Email',
-                      prefixIcon: Iconic.envelope,
-                      data: 'xxx@gmail.com',
-                    ),
-                    separatorBuilder: (context, index) =>
-                        SizedBox(height: 20.h),
-                    itemCount: 4,
+              ),
+              titlePadding:
+                  // EdgeInsets.zero,
+                  EdgeInsets.only(left: 50.w, bottom: 12.h),
+            ),
+          ),
+          SliverList(
+            delegate: SliverChildListDelegate(
+              [
+                ListView.separated(
+                  shrinkWrap: true,
+                  physics: const NeverScrollableScrollPhysics(),
+                  itemBuilder: (context, index) => UserDataSection(
+                    title: 'Your Email',
+                    prefixIcon: Iconic.envelope,
+                    data: 'xxx@gmail.com',
                   ),
+                  separatorBuilder: (context, index) => SizedBox(height: 20.h),
+                  itemCount: 4,
                 ),
-                // Row(
-                //   mainAxisAlignment: MainAxisAlignment.center,
-                //   children: [
-                //     Text(
-                //       'Points : 45555',
-                //       style: AppTextStyle.bold(
-                //         color: AppColors.red_velvet,
-                //         fontSize: 13.sp,
-                //       ),
-                //     ),
-                //     SizedBox(width: 15.w),
-                //     Text(
-                //       'Credits : 1000000',
-                //       style: AppTextStyle.bold(
-                //         color: AppColors.red_velvet,
-                //         fontSize: 13.sp,
-                //       ),
-                //     ),
-                //   ],
-                // )
+                // Add more SliverChildListDelegate items for other content
               ],
             ),
           ),
-        ),
+          SliverToBoxAdapter(
+            child: SizedBox(
+              height: 150.h,
+            ),
+          ),
+        ],
       ),
     );
   }
