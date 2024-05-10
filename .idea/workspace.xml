@@ -5,25 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b74bfcc6-e980-4aff-bea4-fedd4bf9fd11" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/lib/features/home/view/widget/home_appBar.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/features/user_profile/view/user_profile.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/features/user_profile/view/widgets/home_appBar.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/features/user_profile/view/widgets/user_data_section.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/features/user_profile/view/widgets/widgets.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/app/bloc/bottom_nav_bar_bloc.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/app/bloc/bottom_nav_bar_bloc.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/core/common/custom_appBar.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/core/common/custom_appBar.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/core/common/item_box.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/core/common/item_box.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/core/common/line_separate.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/core/common/line_separate.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/core/common/search_box.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/core/common/search_box.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/core/utils/app_colors.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/core/utils/app_colors.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/features/category_view/view/category_view.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/features/category_view/view/category_view.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/features/featured_product/view/featured_product.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/features/featured_product/view/featured_product.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/features/featured_product/view/widgets/widgets.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/features/featured_product/view/widgets/widgets.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/features/home/view/home_view.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/features/home/view/home_view.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/features/home/view/widget/widgets.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/features/home/view/widget/widgets.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/features/product_details/view/product_view.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/features/product_details/view/product_view.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/features/search_view/view/search_view.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/features/search_view/view/search_view.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/features/user_profile/view/user_profile.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/features/user_profile/view/user_profile.dart" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
