@@ -5,35 +5,50 @@ class UserProfile extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    double top = 0;
     return Scaffold(
       body: CustomScrollView(
         slivers: [
           SliverAppBar(
-            backgroundColor: Colors.deepPurple,
-            expandedHeight: 210.h,
+            automaticallyImplyLeading: false,
+            scrolledUnderElevation: 0,
+            elevation: 0,
+            expandedHeight: 220.h,
             pinned: true,
-            flexibleSpace: FlexibleSpaceBar(
-              background: Padding(
-                padding: EdgeInsets.symmetric(horizontal: 118.w),
-                child: CircleAvatar(
-                  radius: 70.r,
+            flexibleSpace: LayoutBuilder(
+                builder: (BuildContext context, BoxConstraints constraints) {
+              top = constraints.biggest.height;
+              return FlexibleSpaceBar(
+                centerTitle: true,
+                title: Row(
+                  mainAxisAlignment: top <= 80.h
+                      ? MainAxisAlignment.start
+                      : MainAxisAlignment.center,
+                  children: [
+                    if (top <= 80.h)
+                      Padding(
+                        padding: EdgeInsets.symmetric(horizontal: 15.w),
+                        child: CircleAvatar(
+                          radius: 18.r,
+                        ),
+                      ),
+                    Text(
+                      'Mahmoud Abdelaty Hamed',
+                      style: TextStyle(
+                        fontSize: 17.sp,
+                        color: Colors.black,
+                      ),
+                    ),
+                  ],
                 ),
-              ),
-              title: Padding(
-                padding: EdgeInsets.only(top: 10.h, bottom: 0),
-                child: Text(
-                  'Mahmoud Abdelaty ',
-                  textAlign: TextAlign.center,
-                  style: AppTextStyle.semiBold(
-                    color: AppColors.dark_blue,
-                    fontSize: 18.sp,
+                background: Padding(
+                  padding: EdgeInsets.only(bottom: 70.h, top: 20.h),
+                  child: CircleAvatar(
+                    radius: 70.r,
                   ),
                 ),
-              ),
-              titlePadding:
-                  // EdgeInsets.zero,
-                  EdgeInsets.only(left: 50.w, bottom: 12.h),
-            ),
+              );
+            }),
           ),
           SliverList(
             delegate: SliverChildListDelegate(
