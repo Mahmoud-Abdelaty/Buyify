@@ -5,15 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b74bfcc6-e980-4aff-bea4-fedd4bf9fd11" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/lib/features/user_profile/bloc/user_profile_bloc.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/features/user_profile/bloc/user_profile_event.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/features/user_profile/bloc/user_profile_state.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/features/user_profile/data/models/user_model.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/features/user_profile/data/repo/user_profile_repo.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/features/user_profile/data/repo/user_profile_repo_impl.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/features/user_profile/view/user_profile.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/features/user_profile/view/user_profile.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/features/user_profile/view/widgets/user_data_section.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/features/user_profile/view/widgets/user_data_section.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/features/user_profile/view/widgets/widgets.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/features/user_profile/view/widgets/widgets.dart" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
