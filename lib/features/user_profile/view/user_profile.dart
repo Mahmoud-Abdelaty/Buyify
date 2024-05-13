@@ -17,9 +17,8 @@ class UserProfile extends StatelessWidget {
                 slivers: [
                   SliverAppBar(
                     automaticallyImplyLeading: false,
-                    scrolledUnderElevation: 0,
-                    elevation: 0,
-                    expandedHeight: 220.h,
+                    // scrolledUnderElevation: 0,
+                    expandedHeight: 250.h,
                     pinned: true,
                     flexibleSpace: LayoutBuilder(
                       builder:
@@ -35,13 +34,12 @@ class UserProfile extends StatelessWidget {
                               if (top <= 80.h)
                                 Padding(
                                   padding:
-                                      EdgeInsets.symmetric(horizontal: 15.w),
+                                      EdgeInsets.symmetric(horizontal: 20.w),
                                   child: CircleAvatar(
-                                    backgroundColor: Colors.green,
-                                    radius: 18.r,
-                                    backgroundImage: CachedNetworkImageProvider(
-                                      state.data.image ??
-                                          'https://student.valuxapps.com/storage/assets/defaults/user.jpg',
+                                    radius: 20.r,
+                                    backgroundImage:
+                                        const CachedNetworkImageProvider(
+                                      'http://www.hotavatars.com/wp-content/uploads/2019/01/I80W1Q0.png',
                                     ),
                                   ),
                                 ),
@@ -56,13 +54,12 @@ class UserProfile extends StatelessWidget {
                           ),
                           background: Padding(
                             padding:
-                                EdgeInsets.fromLTRB(95.w, 20.h, 95.w, 60.h),
+                                EdgeInsets.fromLTRB(80.w, 20.h, 80.w, 60.h),
                             child: Container(
                               decoration: BoxDecoration(
-                                image: DecorationImage(
+                                image: const DecorationImage(
                                   image: NetworkImage(
-                                    state.data.image ??
-                                        'https://student.valuxapps.com/storage/assets/defaults/user.jpg',
+                                    'http://www.hotavatars.com/wp-content/uploads/2019/01/I80W1Q0.png',
                                   ),
                                 ),
                                 borderRadius: BorderRadius.circular(100.r),
@@ -77,56 +74,93 @@ class UserProfile extends StatelessWidget {
                     child: UserDataSection(
                       title: 'Your Email',
                       prefixIcon: Iconic.envelope,
-                      data: 'xxx@gmail.com',
+                      data: state.data.email,
                     ),
                   ),
                   SliverToBoxAdapter(
                     child: UserDataSection(
-                      title: 'Your Email',
+                      title: 'Your Phone',
                       prefixIcon: Iconic.envelope,
-                      data: 'xxx@gmail.com',
+                      data: state.data.phone,
                     ),
                   ),
                   SliverToBoxAdapter(
                     child: UserDataSection(
-                      title: 'Your Email',
-                      prefixIcon: Iconic.envelope,
-                      data: 'xxx@gmail.com',
+                      title: 'Your Points',
+                      prefixIcon: Iconic.menu_dots_vertical_bold,
+                      data: state.data.points.toString(),
                     ),
                   ),
                   SliverToBoxAdapter(
                     child: UserDataSection(
-                      title: 'Your Email',
-                      prefixIcon: Iconic.envelope,
-                      data: 'xxx@gmail.com',
+                      title: 'Your Credit',
+                      prefixIcon: Iconic.credit_card,
+                      data: state.data.credit.toString(),
                     ),
                   ),
                   SliverToBoxAdapter(
-                    child: UserDataSection(
-                      title: 'Your Email',
-                      prefixIcon: Iconic.envelope,
-                      data: 'xxx@gmail.com',
+                    child: Padding(
+                      padding: EdgeInsets.symmetric(
+                          horizontal: 24.w, vertical: 10.h),
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Text(
+                            'Language',
+                            style: AppTextStyle.semiBold(
+                              fontSize: 14.sp,
+                            ),
+                          ),
+                          SizedBox(height: 12.h),
+                          Container(
+                            width: 323.w,
+                            height: 52.h,
+                            decoration: BoxDecoration(
+                              border: Border.all(
+                                color: AppColors.dark_grey,
+                              ),
+                              borderRadius: BorderRadius.circular(12.r),
+                            ),
+                          ),
+                        ],
+                      ),
                     ),
                   ),
                   SliverToBoxAdapter(
-                    child: UserDataSection(
-                      title: 'Your Email',
-                      prefixIcon: Iconic.envelope,
-                      data: 'xxx@gmail.com',
-                    ),
-                  ),
-                  SliverToBoxAdapter(
-                    child: SizedBox(
-                      height: 150.h,
+                    child: Padding(
+                      padding: EdgeInsets.symmetric(
+                          horizontal: 24.w, vertical: 10.h),
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Text(
+                            'Theme',
+                            style: AppTextStyle.semiBold(
+                              fontSize: 14.sp,
+                            ),
+                          ),
+                          SizedBox(height: 12.h),
+                          Container(
+                            width: 323.w,
+                            height: 52.h,
+                            decoration: BoxDecoration(
+                              border: Border.all(
+                                color: AppColors.dark_grey,
+                              ),
+                              borderRadius: BorderRadius.circular(12.r),
+                            ),
+                          ),
+                        ],
+                      ),
                     ),
                   ),
                 ],
               );
             } else if (state is UserProfileLoading) {
-              return LoadingState();
+              return const LoadingState();
             } else {
               // return ErrorState();
-              return SizedBox();
+              return const SizedBox();
             }
           },
         ),
