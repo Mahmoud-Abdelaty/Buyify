@@ -1,7 +1,9 @@
 part of 'widgets.dart';
 
 class CategorySection extends StatelessWidget {
-  const CategorySection({super.key});
+  const CategorySection({
+    super.key,
+  });
 
   @override
   Widget build(BuildContext context) {

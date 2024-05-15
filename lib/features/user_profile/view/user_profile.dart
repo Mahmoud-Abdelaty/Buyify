@@ -1,7 +1,7 @@
 part of 'widgets/widgets.dart';
 
-class UserProfile extends StatelessWidget {
-  const UserProfile({super.key});
+class UserProfileView extends StatelessWidget {
+  const UserProfileView({super.key});
 
   @override
   Widget build(BuildContext context) {
