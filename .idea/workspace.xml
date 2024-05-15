@@ -5,12 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b74bfcc6-e980-4aff-bea4-fedd4bf9fd11" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/lib/features/user_profile/view/widgets/option_container.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/features/user_profile/view/widgets/sliver_appBar.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/features/user_profile/view/widgets/user_data.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/features/wishlist_view/bloc/wishlist_bloc.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/features/wishlist_view/bloc/wishlist_event.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/features/wishlist_view/bloc/wishlist_state.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/features/wishlist_view/data/models/WishhlistProductModel.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/features/wishlist_view/data/repo/wishlist_repo.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/features/wishlist_view/data/repo/wishlist_repo_impl.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/features/user_profile/view/user_profile.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/features/user_profile/view/user_profile.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/features/user_profile/view/widgets/widgets.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/features/user_profile/view/widgets/widgets.dart" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,7 +31,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="feature/bottomNavBar" />
+        <entry key="$PROJECT_DIR$" value="feature/user-profile" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -49,30 +50,30 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.cidr.known.project.marker&quot;: &quot;true&quot;,
-    &quot;cf.first.check.clang-format&quot;: &quot;false&quot;,
-    &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
-    &quot;dart.analysis.tool.window.visible&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;feature/user-profile&quot;,
-    &quot;io.flutter.reload.alreadyRun&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/GitHub/Buyify/lib/features/user_profile/view/widgets&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.17&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;show.migrate.to.gradle.popup&quot;: &quot;false&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.cidr.known.project.marker": "true",
+    "cf.first.check.clang-format": "false",
+    "cidr.known.project.marker": "true",
+    "dart.analysis.tool.window.visible": "false",
+    "git-widget-placeholder": "feature/wishlist",
+    "io.flutter.reload.alreadyRun": "true",
+    "last_opened_file_path": "D:/GitHub/Buyify/lib/features/wishlist_view/data/repo",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.17",
+    "project.structure.side.proportion": "0.2",
+    "show.migrate.to.gradle.popup": "false"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\GitHub\Buyify\lib\features\wishlist_view\data\repo" />
       <recent name="D:\GitHub\Buyify\lib\features\user_profile\view\widgets" />
       <recent name="D:\GitHub\Buyify\lib\core\common" />
       <recent name="D:\GitHub\Buyify\lib\features" />
       <recent name="D:\GitHub\Buyify\lib\core" />
-      <recent name="D:\GitHub\Buyify\assets" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\DELL\Documents\GitHub\Buyify\assets\fonts" />
@@ -89,16 +90,5 @@
       <updated>1711293553558</updated>
     </task>
     <servers />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="Dart">
-          <url>file://$PROJECT_DIR$/lib/features/product_details/bloc/product_details_bloc.dart</url>
-          <line>52</line>
-          <option name="timeStamp" value="7" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>
