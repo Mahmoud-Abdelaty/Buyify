@@ -5,13 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b74bfcc6-e980-4aff-bea4-fedd4bf9fd11" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/lib/features/wishlist_view/bloc/wishlist_bloc.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/features/wishlist_view/bloc/wishlist_event.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/features/wishlist_view/bloc/wishlist_state.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/features/wishlist_view/data/models/WishhlistProductModel.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/features/wishlist_view/data/repo/wishlist_repo.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/features/wishlist_view/data/repo/wishlist_repo_impl.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/features/wishlist_view/view/widgets/widgets.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/features/wishlist_view/view/wishlist_view.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/app/bloc/bottom_nav_bar_bloc.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/app/bloc/bottom_nav_bar_bloc.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/features/home/view/home_view.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/features/home/view/home_view.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/features/home/view/widget/category_section.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/features/home/view/widget/category_section.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/features/home/view/widget/widgets.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/features/home/view/widget/widgets.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/features/user_profile/view/user_profile.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/features/user_profile/view/user_profile.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/main.dart" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

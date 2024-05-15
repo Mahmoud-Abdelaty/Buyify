@@ -1,8 +1,8 @@
-import 'package:Buyify/core/common/error_satet.dart';
 import 'package:Buyify/core/common/loading_state.dart';
 import 'package:Buyify/core/helpers/functions.dart';
 import 'package:Buyify/core/utils/app_colors.dart';
 import 'package:Buyify/core/utils/app_text.dart';
+import 'package:Buyify/features/category_view/bloc/category_bloc.dart';
 import 'package:Buyify/features/category_view/view/widget/widgets.dart';
 import 'package:Buyify/features/featured_product/view/widgets/widgets.dart';
 import 'package:Buyify/features/home/bloc/home_bloc.dart';
