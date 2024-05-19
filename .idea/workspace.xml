@@ -5,13 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b74bfcc6-e980-4aff-bea4-fedd4bf9fd11" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/lib/features/home/view/widget/home_loading.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Dart_Packages.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Dart_Packages.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/features/home/view/home_view.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/features/home/view/home_view.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/features/home/view/widget/title_sections.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/features/home/view/widget/title_sections.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/features/home/view/widget/widgets.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/features/home/view/widget/widgets.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/features/home/view/widget/home_loading.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/features/home/view/widget/home_loading.dart" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
