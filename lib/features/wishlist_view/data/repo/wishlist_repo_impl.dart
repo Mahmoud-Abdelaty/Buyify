@@ -2,7 +2,6 @@ import 'package:Buyify/core/network/endpoints.dart';
 import 'package:Buyify/core/network/error_handling.dart';
 import 'package:Buyify/core/network/network_helper.dart';
 import 'package:Buyify/core/network/response/failure.dart';
-import 'package:Buyify/features/product_details/data/models/product_fav_model.dart';
 import 'package:Buyify/features/wishlist_view/data/models/WishhlistProductModel.dart';
 import 'package:Buyify/features/wishlist_view/data/repo/wishlist_repo.dart';
 import 'package:dartz/dartz.dart';
@@ -17,12 +16,13 @@ class WishlistRepoImplement implements WishlistRepo {
 
       var json = result.data['data']['data'];
       var favoriteList = json
-          .map<ProductFavModel>(
+          .map<WishlistProductModel>(
               (productJson) => WishlistProductModel.fromJson(productJson))
           .toList();
 
       return right(favoriteList);
     } catch (e) {
+      print(e);
       return left(ErrorHandler.handle(e).failure);
     }
   }

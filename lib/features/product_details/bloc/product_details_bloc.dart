@@ -12,6 +12,8 @@ part 'product_details_state.dart';
 class ProductDetailsBloc
     extends Bloc<ProductDetailsEvent, ProductDetailsState> {
   final ProductDetailsRepo productDetailsRepo;
+  final Map<int, bool> inFavorites = {};
+  final Map<int, bool> inCart = {};
 
   ProductDetailsBloc(this.productDetailsRepo) : super(ProductDetailsInitial()) {
     on<GetProductDetails>((event, emit) async {
@@ -29,8 +31,12 @@ class ProductDetailsBloc
       emit(ProductAddedFavLoading());
       try {
         var result = await productDetailsRepo.addProductFavorite(event.id);
-        result.fold((l) => emit(ProductAddedFavFailed()),
-            (r) => emit(ProductAddedFavSuccess(r)));
+        result.fold((l) => emit(ProductAddedFavFailed()), (r) {
+          if (r.status) {
+            inFavorites[event.id] = !inFavorites[event.id]!;
+          }
+          emit(ProductAddedFavSuccess(r));
+        });
       } catch (e) {
         emit(ProductAddedFavFailed());
       }
@@ -40,8 +46,12 @@ class ProductDetailsBloc
       emit(ProductAddedToCartLoading());
       try {
         var result = await productDetailsRepo.addProductToCart(event.id);
-        result.fold((l) => emit(ProductAddedToCartFailed()),
-            (r) => emit(ProductAddedToCartSuccess(r)));
+        result.fold((l) => emit(ProductAddedToCartFailed()), (r) {
+          if (r.status) {
+            inCart[event.id] = !inCart[event.id]!;
+          }
+          emit(ProductAddedToCartSuccess(r));
+        });
       } catch (e) {
         emit(ProductAddedToCartFailed());
       }
@@ -56,6 +66,23 @@ class ProductDetailsBloc
         });
       } catch (e) {
         emit(GetFavoriteProductsFailed());
+      }
+    });
+
+    on<GetProductsEvent>((event, emit) async {
+      emit(GetProductsLoading());
+      try {
+        var result = await productDetailsRepo.fetchProducts();
+        result.fold((l) => emit(GetProductsError()), (r) {
+          r.products.map((e) {
+            inFavorites.addAll({e.id: e.inFavorites});
+            inCart.addAll({e.id: e.inCart});
+          }).toList();
+          print('AAAAAAAAAAAAAAA${inFavorites}');
+          emit(GetProductsSuccess(r));
+        });
+      } catch (e) {
+        emit(GetProductsError());
       }
     });
   }

@@ -40,3 +40,12 @@ class GetFavoriteProductsSuccess extends ProductDetailsState {
 }
 
 class GetFavoriteProductsFailed extends ProductDetailsState {}
+
+class GetProductsLoading extends ProductDetailsState {}
+
+class GetProductsSuccess extends ProductDetailsState {
+  final HomeModel data;
+  GetProductsSuccess(this.data);
+}
+
+class GetProductsError extends ProductDetailsState {}

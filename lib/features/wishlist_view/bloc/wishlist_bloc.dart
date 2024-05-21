@@ -17,6 +17,7 @@ class WishlistBloc extends Bloc<WishlistEvent, WishlistState> {
           emit(GetWishlistProductsSuccess(r));
         });
       } catch (e) {
+        print(e);
         emit(GetWishlistProductsFailed());
       }
     });

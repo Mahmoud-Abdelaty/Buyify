@@ -7,10 +7,9 @@ class ActionButtons extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    List<Map<int, dynamic>> list = [];
     return BlocProvider(
       create: (context) => ProductDetailsBloc(ProductDetailsRepoImplement())
-        ..add(GetFavoriteProducts()),
+        ..add(GetProductsEvent()),
       child: BlocBuilder<ProductDetailsBloc, ProductDetailsState>(
         builder: (context, favoriteState) {
           return Padding(
@@ -47,7 +46,14 @@ class ActionButtons extends StatelessWidget {
                         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                         children: [
                           Text(
-                            'Added',
+                            BlocProvider.of<ProductDetailsBloc>(context)
+                                        .inFavorites[productId] ==
+                                    null
+                                ? 'Added'
+                                : BlocProvider.of<ProductDetailsBloc>(context)
+                                        .inFavorites[productId]!
+                                    ? 'Remove'
+                                    : 'Added',
                             style: AppTextStyle.medium(
                               fontSize: 14.sp,
                               color: AppColors.white,
@@ -103,7 +109,15 @@ class ActionButtons extends StatelessWidget {
                                 firstColor: Colors.white,
                               )
                             : Text(
-                                'Add to Cart',
+                                BlocProvider.of<ProductDetailsBloc>(context)
+                                            .inCart[productId] ==
+                                        null
+                                    ? 'Add To Cart'
+                                    : BlocProvider.of<ProductDetailsBloc>(
+                                                context)
+                                            .inCart[productId]!
+                                        ? 'Remove From Cart'
+                                        : 'Add to Cart',
                                 style: AppTextStyle.medium(
                                   fontSize: 14.sp,
                                   color: AppColors.white,
