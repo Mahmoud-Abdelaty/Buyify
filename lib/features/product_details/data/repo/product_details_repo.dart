@@ -10,4 +10,5 @@ abstract class ProductDetailsRepo {
   Future<Either<Failure?, FavoritesModel>> addProductFavorite(id);
   Future<Either<Failure?, AddToCartModel>> addProductToCart(id);
   Future<Either<Failure?, List<ProductFavModel>>> getFavoritesProducts();
+  Future<Either<Failure?, HomeModel>> fetchProducts();
 }

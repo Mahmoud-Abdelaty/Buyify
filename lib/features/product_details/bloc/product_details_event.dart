@@ -19,3 +19,5 @@ class AddProductToCart extends ProductDetailsEvent {
 }
 
 class GetFavoriteProducts extends ProductDetailsEvent {}
+
+class GetProductsEvent extends ProductDetailsEvent {}

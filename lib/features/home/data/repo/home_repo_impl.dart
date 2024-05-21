@@ -8,6 +8,8 @@ import 'package:Buyify/features/home/data/repo/home_repo.dart';
 import 'package:dartz/dartz.dart';
 
 class HomeRepoImplement implements HomeRepo {
+  final Map<int, bool> favorites = {};
+
   @override
   Future<Either<Failure?, HomeModel>> fetchHomeData() async {
     try {
@@ -17,6 +19,9 @@ class HomeRepoImplement implements HomeRepo {
 
       var data = HomeModel.fromJson(json);
 
+      data.products
+          .map((e) => favorites.addAll({e.id: e.inFavorites}))
+          .toList();
       return right(data);
     } catch (e) {
       print(e);
