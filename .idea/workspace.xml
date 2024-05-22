@@ -5,23 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b74bfcc6-e980-4aff-bea4-fedd4bf9fd11" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/lib/features/wishlist_view/view/widgets/wishlist_item.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/features/home/data/repo/home_repo_impl.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/features/home/data/repo/home_repo_impl.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/features/home/view/home_view.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/features/home/view/home_view.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/features/product_details/bloc/product_details_bloc.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/features/product_details/bloc/product_details_bloc.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/features/product_details/bloc/product_details_event.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/features/product_details/bloc/product_details_event.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/features/product_details/bloc/product_details_state.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/features/product_details/bloc/product_details_state.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/features/product_details/data/repo/product_details_repo.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/features/product_details/data/repo/product_details_repo.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/features/product_details/data/repo/product_details_repo_impl.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/features/product_details/data/repo/product_details_repo_impl.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/features/product_details/view/widgets/action_buttons.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/features/product_details/view/widgets/action_buttons.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/features/wishlist_view/bloc/wishlist_bloc.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/features/wishlist_view/bloc/wishlist_bloc.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/features/wishlist_view/bloc/wishlist_event.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/features/wishlist_view/bloc/wishlist_event.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/features/wishlist_view/bloc/wishlist_state.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/features/wishlist_view/bloc/wishlist_state.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/features/wishlist_view/data/repo/wishlist_repo.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/features/wishlist_view/data/repo/wishlist_repo.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/features/wishlist_view/data/repo/wishlist_repo_impl.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/features/wishlist_view/data/repo/wishlist_repo_impl.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/features/wishlist_view/view/widgets/widgets.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/features/wishlist_view/view/widgets/widgets.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/features/wishlist_view/view/widgets/wishlist_item.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/features/wishlist_view/view/widgets/wishlist_item.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/features/wishlist_view/view/wishlist_view.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/features/wishlist_view/view/wishlist_view.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/main.dart" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
