@@ -13,3 +13,12 @@ class GetWishlistProductsSuccess extends WishlistState {
 }
 
 class GetWishlistProductsFailed extends WishlistState {}
+
+class ProductAddedWishlistLoading extends WishlistState {}
+
+class ProductAddedWishlistSuccess extends WishlistState {
+  final FavoritesModel data;
+  ProductAddedWishlistSuccess(this.data);
+}
+
+class ProductAddedWishlistFailed extends WishlistState {}

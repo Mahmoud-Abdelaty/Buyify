@@ -4,3 +4,8 @@ part of 'wishlist_bloc.dart';
 abstract class WishlistEvent {}
 
 class GetWishlistProductsEvent extends WishlistEvent {}
+
+class AddProductWishlist extends WishlistEvent {
+  final int id;
+  AddProductWishlist(this.id);
+}

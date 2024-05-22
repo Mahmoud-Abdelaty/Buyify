@@ -1,3 +1,4 @@
+import 'package:Buyify/features/product_details/data/models/favorites_model.dart';
 import 'package:Buyify/features/wishlist_view/data/models/WishhlistProductModel.dart';
 import 'package:Buyify/features/wishlist_view/data/repo/wishlist_repo.dart';
 import 'package:bloc/bloc.dart';
@@ -12,7 +13,7 @@ class WishlistBloc extends Bloc<WishlistEvent, WishlistState> {
     on<WishlistEvent>((event, emit) async {
       emit(GetWishlistProductsLoading());
       try {
-        var result = await wishlistRepo.getFavoritesProducts();
+        var result = await wishlistRepo.getWishlistProducts();
         result.fold((l) => emit(GetWishlistProductsFailed()), (r) {
           emit(GetWishlistProductsSuccess(r));
         });
@@ -20,6 +21,13 @@ class WishlistBloc extends Bloc<WishlistEvent, WishlistState> {
         print(e);
         emit(GetWishlistProductsFailed());
       }
+    });
+
+    on<AddProductWishlist>((event, emit) async {
+      emit(GetWishlistProductsLoading());
+      try {
+        var result = await wishlistRepo.addProductWishlist(event.id);
+      } catch (e) {}
     });
   }
 }
