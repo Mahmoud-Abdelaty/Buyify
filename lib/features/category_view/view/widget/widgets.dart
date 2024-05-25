@@ -17,4 +17,6 @@ import 'package:iconic/iconic.dart';
 
 part '../../../home/view/widget/all_categories.dart';
 part '../category_view.dart';
+part 'category_data.dart';
 part 'dialog_filtering&sorting.dart';
+part 'filter&sorting_bttton.dart';

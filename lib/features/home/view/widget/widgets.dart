@@ -2,6 +2,7 @@ import 'package:Buyify/core/common/loading_state.dart';
 import 'package:Buyify/core/helpers/functions.dart';
 import 'package:Buyify/core/utils/app_colors.dart';
 import 'package:Buyify/core/utils/app_text.dart';
+import 'package:Buyify/features/cart/view/widgets/widgets.dart';
 import 'package:Buyify/features/category_view/view/widget/widgets.dart';
 import 'package:Buyify/features/featured_product/view/widgets/widgets.dart';
 import 'package:Buyify/features/home/bloc/home_bloc.dart';
@@ -15,7 +16,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:iconic/iconic.dart';
-import 'package:shimmer/shimmer.dart';
 
 part '../../../../core/common/custom_appBar.dart';
 part '../../../../core/common/item_box.dart';
