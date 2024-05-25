@@ -5,18 +5,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b74bfcc6-e980-4aff-bea4-fedd4bf9fd11" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/lib/features/cart/bloc/cart_bloc.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/features/cart/bloc/cart_event.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/features/cart/bloc/cart_state.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/features/cart/data/models/cart_model.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/features/cart/view/cart_view.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/features/cart/view/widgets/checkout_button.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/features/cart/view/widgets/widgets.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/features/category_view/view/widget/category_data.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/features/category_view/view/widget/filter&amp;sorting_bttton.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/features/product_details/bloc/product_details_bloc.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/features/product_details/bloc/product_details_bloc.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/features/product_details/bloc/product_details_state.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/features/product_details/bloc/product_details_state.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/features/product_details/data/repo/product_details_repo.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/features/product_details/data/repo/product_details_repo.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/features/wishlist_view/bloc/wishlist_bloc.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/features/wishlist_view/bloc/wishlist_bloc.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/features/wishlist_view/bloc/wishlist_event.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/features/wishlist_view/bloc/wishlist_event.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/features/wishlist_view/bloc/wishlist_state.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/features/wishlist_view/bloc/wishlist_state.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/features/wishlist_view/data/repo/wishlist_repo.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/features/wishlist_view/data/repo/wishlist_repo.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/features/wishlist_view/data/repo/wishlist_repo_impl.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/features/wishlist_view/data/repo/wishlist_repo_impl.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/features/wishlist_view/view/widgets/widgets.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/features/wishlist_view/view/widgets/widgets.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/features/wishlist_view/view/widgets/wishlist_item.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/features/wishlist_view/view/widgets/wishlist_item.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/features/wishlist_view/view/wishlist_view.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/features/wishlist_view/view/wishlist_view.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/core/common/line_separate.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/core/common/line_separate.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/features/category_view/view/category_view.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/features/category_view/view/category_view.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/features/category_view/view/widget/widgets.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/features/category_view/view/widget/widgets.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/features/home/view/widget/home_appBar.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/features/home/view/widget/home_appBar.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/features/home/view/widget/widgets.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/features/home/view/widget/widgets.dart" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,6 +32,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="CMakeLists.txt" />
         <option value="Dart File" />
       </list>
     </option>
@@ -36,7 +40,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="feature/user-profile" />
+        <entry key="$PROJECT_DIR$" value="feature/order" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -63,7 +67,7 @@
     &quot;cf.first.check.clang-format&quot;: &quot;false&quot;,
     &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
     &quot;dart.analysis.tool.window.visible&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;feature/wishlist&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;feature/cart&quot;,
     &quot;io.flutter.reload.alreadyRun&quot;: &quot;true&quot;,
     &quot;last_opened_file_path&quot;: &quot;D:/GitHub/Buyify/lib/features/wishlist_view/data/repo&quot;,
     &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
