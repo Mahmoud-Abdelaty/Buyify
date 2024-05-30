@@ -33,23 +33,23 @@ class CartBloc extends Bloc<CartEvent, CartState> {
     });
 
     on<UpdateQuantityEvent>((event, emit) async {
+      emit(UpdateCartLoadingState());
+
       try {
         var result = await cartRepo.updateCartQuantity(
           event.cartId,
           {'quantity': event.newQuantity},
         );
         return result.fold((l) => emit(UpdateCartFailedState()),
-            (r) => emit(CartLoadingState()));
+            (r) => emit(UpdateCartSuccessState()));
       } catch (e) {
         emit(UpdateCartFailedState());
       }
     });
 
     on<ChangeEvent>((event, emit) {
-      emit(UpdateCartLoadingState());
       quantity = cartRepo.changeQuantity(event.quantity, event.operation);
       add(UpdateQuantityEvent(event.cartId, quantity));
-      add(GetCartDateEvent());
     });
   }
 }

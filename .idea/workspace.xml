@@ -5,27 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b74bfcc6-e980-4aff-bea4-fedd4bf9fd11" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/lib/core/helpers/bloc_observer.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/features/cart/data/models/cart_update_model.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/features/cart/data/repo/cart_repo.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/features/cart/data/repo/cart_repo_impl.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/features/cart/view/widgets/buttons_quantity.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/features/cart/view/widgets/cart_item.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/features/cart/view/widgets/checkout_corner.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/features/cart/view/widgets/image_product.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/features/cart/view/widgets/price_widget.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/features/cart/view/widgets/product_data.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/core/common/error_satet.dart" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/features/cart/bloc/cart_bloc.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/features/cart/bloc/cart_bloc.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/features/cart/bloc/cart_event.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/features/cart/bloc/cart_event.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/features/cart/bloc/cart_state.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/features/cart/bloc/cart_state.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/features/cart/data/models/cart_model.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/features/cart/data/models/cart_model.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/features/cart/view/cart_view.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/features/cart/view/cart_view.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/features/cart/view/widgets/checkout_corner.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/features/cart/view/widgets/checkout_corner.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/features/cart/view/widgets/widgets.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/features/cart/view/widgets/widgets.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/features/category_view/view/widget/widgets.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/features/category_view/view/widget/widgets.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/features/product_details/view/widgets/widgets.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/features/product_details/view/widgets/widgets.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/main.dart" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
