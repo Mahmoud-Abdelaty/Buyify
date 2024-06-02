@@ -37,7 +37,7 @@ class DialogProductAction extends StatelessWidget {
             ),
             const LineSeparate(),
             Padding(
-              padding: EdgeInsets.fromLTRB(15.w, 20.h, 15.w, 15.h),
+              padding: EdgeInsets.fromLTRB(15.w, 15.h, 15.w, 10.h),
               child: Text(
                 'Add to Wishlist',
                 style: AppTextStyle.medium(
@@ -61,7 +61,7 @@ class DialogProductAction extends StatelessWidget {
               ),
             ),
             Padding(
-              padding: EdgeInsets.symmetric(horizontal: 25.w, vertical: 25.h),
+              padding: EdgeInsets.symmetric(horizontal: 25.w, vertical: 20.h),
               child: GestureDetector(
                 onTap: () {},
                 child: Container(

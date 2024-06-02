@@ -25,8 +25,9 @@ class CartBloc extends Bloc<CartEvent, CartState> {
       emit(DeleteCartLoadingState());
       try {
         var result = await cartRepo.deleteCart(event.cartId);
-        return result.fold((l) => emit(DeleteCartFailedState()),
-            (r) => emit(DeleteCartSuccessState()));
+        return result.fold((l) => emit(DeleteCartFailedState()), (r) async {
+          add(GetCartDateEvent());
+        });
       } catch (e) {
         emit(DeleteCartFailedState());
       }
@@ -34,14 +35,14 @@ class CartBloc extends Bloc<CartEvent, CartState> {
 
     on<UpdateQuantityEvent>((event, emit) async {
       emit(UpdateCartLoadingState());
-
       try {
         var result = await cartRepo.updateCartQuantity(
           event.cartId,
           {'quantity': event.newQuantity},
         );
-        return result.fold((l) => emit(UpdateCartFailedState()),
-            (r) => emit(UpdateCartSuccessState()));
+        return result.fold((l) => emit(UpdateCartFailedState()), (r) {
+          add(GetCartDateEvent());
+        });
       } catch (e) {
         emit(UpdateCartFailedState());
       }

@@ -10,7 +10,7 @@ class HomeView extends StatelessWidget {
           HomeBloc(HomeRepoImplement())..add(GetHomeDataEvent()),
       child: Scaffold(
         appBar: PreferredSize(
-          preferredSize: Size.fromHeight(51.h),
+          preferredSize: Size.fromHeight(66.h),
           child: const HomeAppBar(),
         ),
         body: BlocBuilder<HomeBloc, HomeState>(

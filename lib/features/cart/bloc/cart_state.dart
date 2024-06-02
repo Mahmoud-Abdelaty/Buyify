@@ -17,14 +17,8 @@ class CartFailedState extends CartState {}
 
 class DeleteCartLoadingState extends CartState {}
 
-class DeleteCartSuccessState extends CartState {}
-
 class DeleteCartFailedState extends CartState {}
 
 class UpdateCartLoadingState extends CartState {}
 
-class UpdateCartSuccessState extends CartState {}
-
 class UpdateCartFailedState extends CartState {}
-
-// class ChangeQuantityState extends CartState {}

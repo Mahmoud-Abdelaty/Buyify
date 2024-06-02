@@ -4,13 +4,11 @@ class PriceWidget extends StatelessWidget {
   const PriceWidget({
     super.key,
     required this.title,
-    required this.price,
-    this.priceColor = AppColors.dark_grey,
+    required this.widget,
   });
 
   final String title;
-  final num price;
-  final Color? priceColor;
+  final Widget widget;
   @override
   Widget build(BuildContext context) {
     return Padding(
@@ -25,13 +23,7 @@ class PriceWidget extends StatelessWidget {
             ),
           ),
           const Spacer(),
-          Text(
-            price.toString(),
-            style: AppTextStyle.semiBold(
-              fontSize: 16.sp,
-              color: priceColor,
-            ),
-          ),
+          widget,
         ],
       ),
     );

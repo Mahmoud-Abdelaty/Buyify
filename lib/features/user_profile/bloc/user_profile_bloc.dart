@@ -1,3 +1,4 @@
+import 'package:Buyify/features/user_profile/data/models/address_model.dart';
 import 'package:Buyify/features/user_profile/data/models/user_model.dart';
 import 'package:Buyify/features/user_profile/data/repo/user_profile_repo.dart';
 import 'package:bloc/bloc.dart';
@@ -18,6 +19,17 @@ class UserProfileBloc extends Bloc<UserProfileEvent, UserProfileState> {
             (r) => emit(UserProfileSuccess(r)));
       } catch (e) {
         emit(UserProfileError());
+      }
+    });
+
+    on<GetUserAddressEvent>((event, emit) async {
+      emit(UserAddressLoading());
+      try {
+        var result = await userProfileRepo.getUserAddress();
+        return result.fold((l) => emit(UserAddressError()),
+            (r) => emit(UserAddressSuccess(r)));
+      } catch (e) {
+        emit(UserAddressError());
       }
     });
   }

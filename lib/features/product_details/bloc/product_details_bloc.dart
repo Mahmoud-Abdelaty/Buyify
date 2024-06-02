@@ -65,7 +65,7 @@ class ProductDetailsBloc
             inFavorites.addAll({e.id: e.inFavorites});
             inCart.addAll({e.id: e.inCart});
           }).toList();
-          print('AAAAAAAAAAAAAAA${inFavorites}');
+
           emit(GetProductsSuccess(r));
         });
       } catch (e) {

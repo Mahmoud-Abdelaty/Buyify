@@ -5,11 +5,62 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b74bfcc6-e980-4aff-bea4-fedd4bf9fd11" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/lib/core/common/up_down_loader.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/features/product_details/view/widgets/addCart_button.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/features/product_details/view/widgets/favorite_button.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/features/product_details/view/widgets/showSnackBar.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/features/search_view/view/widgets/seaarch_item.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/features/user_profile/data/models/address_model.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/features/user_profile/data/models/option_model.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/features/user_profile/data/repo/methods_user_data_model.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/features/user_profile/view/widgets/account_view.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/features/user_profile/view/widgets/address_info_widget.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/features/user_profile/view/widgets/address_item.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/features/user_profile/view/widgets/address_view.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/features/user_profile/view/widgets/another_user_data.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/features/user_profile/view/widgets/main_user_data.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/features/user_profile/view/widgets/option_user_profile.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Dart_Packages.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Dart_Packages.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/app/view/bottomNavBar.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/app/view/bottomNavBar.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/core/common/custom_appBar.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/core/common/custom_appBar.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/core/common/item_box.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/core/common/item_box.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/core/common/search_box.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/core/common/search_box.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/features/cart/bloc/cart_bloc.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/features/cart/bloc/cart_bloc.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/features/cart/bloc/cart_state.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/features/cart/bloc/cart_state.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/features/cart/data/models/cart_update_model.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/features/cart/data/models/cart_update_model.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/features/cart/data/repo/cart_repo.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/features/cart/data/repo/cart_repo.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/features/cart/data/repo/cart_repo_impl.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/features/cart/data/repo/cart_repo_impl.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/features/cart/view/cart_view.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/features/cart/view/cart_view.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/features/cart/view/widgets/buttons_quantity.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/features/cart/view/widgets/buttons_quantity.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/features/cart/view/widgets/cart_item.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/features/cart/view/widgets/cart_item.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/features/cart/view/widgets/checkout_corner.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/features/cart/view/widgets/checkout_corner.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/features/cart/view/widgets/price_widget.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/features/cart/view/widgets/price_widget.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/features/cart/view/widgets/product_data.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/features/cart/view/widgets/product_data.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/features/cart/view/widgets/widgets.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/features/cart/view/widgets/widgets.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/features/home/view/home_view.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/features/home/view/home_view.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/features/home/view/widget/dialog_product_action.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/features/home/view/widget/dialog_product_action.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/features/product_details/bloc/product_details_bloc.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/features/product_details/bloc/product_details_bloc.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/features/product_details/view/product_view.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/features/product_details/view/product_view.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/features/product_details/view/widgets/action_buttons.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/features/product_details/view/widgets/action_buttons.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/features/product_details/view/widgets/widgets.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/features/product_details/view/widgets/widgets.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/features/search_view/view/search_view.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/features/search_view/view/search_view.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/features/search_view/view/widgets/search_box_result.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/features/search_view/view/widgets/search_box_result.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/features/search_view/view/widgets/widgets.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/features/search_view/view/widgets/widgets.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/features/user_profile/bloc/user_profile_bloc.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/features/user_profile/bloc/user_profile_bloc.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/features/user_profile/bloc/user_profile_event.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/features/user_profile/bloc/user_profile_event.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/features/user_profile/bloc/user_profile_state.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/features/user_profile/bloc/user_profile_state.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/features/user_profile/data/repo/user_profile_repo.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/features/user_profile/data/repo/user_profile_repo.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/features/user_profile/data/repo/user_profile_repo_impl.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/features/user_profile/data/repo/user_profile_repo_impl.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/features/user_profile/view/user_profile.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/features/user_profile/view/user_profile.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/features/user_profile/view/widgets/home_appBar.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/features/user_profile/view/widgets/option_container.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/features/user_profile/view/widgets/sliver_appBar.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/features/user_profile/view/widgets/user_data.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/features/user_profile/view/widgets/user_data_section.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/features/user_profile/view/widgets/widgets.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/features/user_profile/view/widgets/widgets.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/main.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,7 +110,7 @@
     &quot;dart.analysis.tool.window.visible&quot;: &quot;false&quot;,
     &quot;git-widget-placeholder&quot;: &quot;feature/cart&quot;,
     &quot;io.flutter.reload.alreadyRun&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/GitHub/Buyify/lib/features/cart/data/repo&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/GitHub/Buyify/lib/features/user_profile/view&quot;,
     &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.17&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
@@ -68,11 +119,11 @@
 }</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\GitHub\Buyify\lib\features\user_profile\view" />
       <recent name="D:\GitHub\Buyify\lib\features\cart\data\repo" />
       <recent name="D:\GitHub\Buyify\lib\features\cart\data" />
       <recent name="D:\GitHub\Buyify\lib\features\wishlist_view\data\repo" />
       <recent name="D:\GitHub\Buyify\lib\features\user_profile\view\widgets" />
-      <recent name="D:\GitHub\Buyify\lib\core\common" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\DELL\Documents\GitHub\Buyify\assets\fonts" />

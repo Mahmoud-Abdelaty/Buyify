@@ -9,7 +9,7 @@ class CartItem extends StatelessWidget {
     return Padding(
       padding: EdgeInsets.fromLTRB(20.w, 0, 20.w, 20.h),
       child: Container(
-        height: 120.h,
+        height: 130.h,
         width: 300.w,
         decoration: BoxDecoration(
           color: AppColors.grey93,

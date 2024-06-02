@@ -24,12 +24,12 @@ class CartRepoImplement implements CartRepo {
   }
 
   @override
-  Future<Either<Failure?, CartItemModel>> deleteCart(cartId) async {
+  Future<Either<Failure?, ProductModelOP>> deleteCart(cartId) async {
     try {
       var result = await NetworkHelper.instance
-          .get(endPoint: EndPoints.DeleteCart(cartId));
+          .delete(endPoint: EndPoints.DeleteCart(cartId));
       var json = result.data['data'];
-      var data = CartItemModel.fromMap(json);
+      var data = ProductModelOP.fromMap(json);
       return right(data);
     } catch (e) {
       print(e);
@@ -38,7 +38,7 @@ class CartRepoImplement implements CartRepo {
   }
 
   @override
-  Future<Either<Failure?, ProductUpdateModel>> updateCartQuantity(
+  Future<Either<Failure?, ProductModelOP>> updateCartQuantity(
       cartId, newQuantity) async {
     try {
       var result = await NetworkHelper.instance.put(
@@ -47,7 +47,7 @@ class CartRepoImplement implements CartRepo {
       );
 
       var json = result.data['data'];
-      var data = ProductUpdateModel.fromMap(json);
+      var data = ProductModelOP.fromMap(json);
       return right(data);
     } catch (e) {
       print(e);
@@ -60,7 +60,7 @@ class CartRepoImplement implements CartRepo {
     if (operation == 'plus') {
       quantity++;
       return quantity;
-    } else if (quantity != 0) {
+    } else if (quantity != 1) {
       quantity--;
       return quantity;
     } else {
