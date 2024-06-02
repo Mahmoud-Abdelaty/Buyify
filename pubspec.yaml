@@ -24,6 +24,7 @@ dependencies:
   loading_indicator: ^3.1.1
   animated_loading_indicators: ^1.0.0+4
   shimmer: ^3.0.0
+  flutter_switch: ^0.3.2
 
 
 dev_dependencies:

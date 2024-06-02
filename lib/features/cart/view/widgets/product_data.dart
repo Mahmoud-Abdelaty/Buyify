@@ -12,48 +12,54 @@ class ProductData extends StatelessWidget {
   final num price;
   final num quantity;
   final num id;
+
   @override
   Widget build(BuildContext context) {
-    return Expanded(
-      child: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
-        children: [
-          Row(
+    return BlocBuilder<CartBloc, CartState>(
+      builder: (context, state) {
+        return Expanded(
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              Expanded(
-                child: Text(
-                  name,
-                  style: AppTextStyle.bold(
-                    fontSize: 15.sp,
-                    overflow: TextOverflow.ellipsis,
+              Row(
+                children: [
+                  Expanded(
+                    child: Text(
+                      name,
+                      style: AppTextStyle.bold(
+                        fontSize: 15.sp,
+                        overflow: TextOverflow.ellipsis,
+                      ),
+                    ),
                   ),
-                ),
-              ),
-              IconButton(
-                onPressed: () {},
-                icon: Icon(
-                  Iconic.cross_small,
-                  size: 12.sp,
-                ),
-              ),
-            ],
-          ),
-          const Spacer(),
-          Row(
-            children: [
-              Text(
-                price.toString(),
-                style: AppTextStyle.bold(
-                  fontSize: 15.sp,
-                  color: AppColors.red_velvet,
-                ),
+                  IconButton(
+                    onPressed: () => BlocProvider.of<CartBloc>(context)
+                        .add(DeleteCartEvent(id)),
+                    icon: Icon(
+                      Iconic.cross_small,
+                      size: 12.sp,
+                    ),
+                  ),
+                ],
               ),
               const Spacer(),
-              ButtonsQuantity(quantity: quantity, cartId: id),
+              Row(
+                children: [
+                  Text(
+                    price.toString(),
+                    style: AppTextStyle.bold(
+                      fontSize: 15.sp,
+                      color: AppColors.red_velvet,
+                    ),
+                  ),
+                  const Spacer(),
+                  ButtonsQuantity(quantity: quantity, cartId: id),
+                ],
+              ),
             ],
           ),
-        ],
-      ),
+        );
+      },
     );
   }
 }

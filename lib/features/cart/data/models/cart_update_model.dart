@@ -1,11 +1,11 @@
-class ProductUpdateModel {
+class ProductModelOP {
   Null id;
   Null price;
   Null oldPrice;
   Null discount;
   Null image;
 
-  ProductUpdateModel({
+  ProductModelOP({
     required this.id,
     required this.price,
     required this.oldPrice,
@@ -13,8 +13,7 @@ class ProductUpdateModel {
     required this.image,
   });
 
-  factory ProductUpdateModel.fromMap(Map<String, dynamic> json) =>
-      ProductUpdateModel(
+  factory ProductModelOP.fromMap(Map<String, dynamic> json) => ProductModelOP(
         id: json["id"],
         price: json["price"],
         oldPrice: json["old_price"],
