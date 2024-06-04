@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AndroidLayouts">
+    <shared>
+      <config />
+    </shared>
+  </component>
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="NONE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="b74bfcc6-e980-4aff-bea4-fedd4bf9fd11" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/lib/features/authentication/animations/button_animation.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/features/authentication/cubit/login/login_cubit.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/features/authentication/cubit/login/login_state.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/features/authentication/data/models/user.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/features/authentication/data/repo/login_repo.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/features/authentication/view/login_view.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/features/authentication/view/reset_password_view.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/features/authentication/view/sign_up_view.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/features/authentication/view/update_password_view.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/features/authentication/view/verification_view.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/features/authentication/view/widgets/custom_back_button.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/features/authentication/view/widgets/custom_text_field.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/features/authentication/view/widgets/primary_button.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/discord.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/discord.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Dart_Packages.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Dart_Packages.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Dart_SDK.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Dart_SDK.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Flutter_Plugins.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Flutter_Plugins.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/main.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.yaml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ClangdSettings">
+    <option name="formatViaClangd" value="false" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Dart File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="home" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 4
+}</component>
+  <component name="ProjectId" id="2e8kMtwfFNNfP7Tcl1oUbDy1I8k" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Flutter.main.dart.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;cf.first.check.clang-format&quot;: &quot;false&quot;,
+    &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;dart.analysis.tool.window.visible&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;feature/authentication&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;io.flutter.reload.alreadyRun&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;E:/Users/DELL/StudioProjects/To_Do&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;show.migrate.to.gradle.popup&quot;: &quot;false&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\DELL\Documents\GitHub\E-Commerce\android\app\src\main\res" />
+      <recent name="C:\Users\DELL\Documents\GitHub\E-Commerce\web\icons" />
+      <recent name="C:\Users\DELL\Documents\GitHub\E-Commerce\assets\fonts" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Git-Hub\Android-Studio\Flutter\Buyify\lib\features\authentication\data\repo" />
+      <recent name="D:\Git-Hub\Android-Studio\Flutter\Buyify\lib\features\authentication\bloc" />
+      <recent name="C:\Users\DELL\Documents\GitHub\Buyify\assets\fonts" />
+      <recent name="C:\Users\DELL\Documents\GitHub\E-Commerce\web" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="b74bfcc6-e980-4aff-bea4-fedd4bf9fd11" name="Changes" comment="" />
+      <created>1711293553558</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1711293553558</updated>
+      <workItem from="1711795294681" duration="5476000" />
+      <workItem from="1711827698628" duration="2840000" />
+      <workItem from="1711873982933" duration="3391000" />
+      <workItem from="1712609620566" duration="582000" />
+      <workItem from="1713470095320" duration="313000" />
+      <workItem from="1713470844787" duration="123000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>
