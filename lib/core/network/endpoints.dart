@@ -26,7 +26,7 @@ class EndPoints {
   //FAVORITES
   static const FAVORITES = '/favorites';
   static const ADD_OR_DELETE_FAVOURITE = '/favorites';
-  static DeleteFavorite(productId) => '/favorites/$productId';
+  static DeleteFavorite(processId) => '/favorites/$processId';
 
   //CARTS
   static const GET_CARTS = '/carts';

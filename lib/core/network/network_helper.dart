@@ -1,5 +1,3 @@
-import 'package:Buyify/core/caching/caching_key.dart';
-import 'package:Buyify/core/caching/shared_helper.dart';
 import 'package:Buyify/core/network/endpoints.dart';
 import 'package:dio/dio.dart';
 import 'package:flutter/foundation.dart';
@@ -81,11 +79,13 @@ class NetworkHelper {
   Future<Options> _configureOptions(bool withToken) async {
     Options options = Options();
     if (withToken) {
-      var token = SharedHelper.instance?.readString(CachingKey.TOKEN);
+      // var token = SharedHelper.instance?.readString(CachingKey.TOKEN);
+      var token =
+          'g4Qjd5ypSOKTXby8BupeTGdK7pkkutQbGIqVehKICyxZ3DJclq18zGn0AhfoPmZRIWv7Qj';
       options.headers = {
-        'Authorization': 'Bearer $token',
-        'Accept': 'application/json',
-        'Accept-Language': 'en',
+        'Authorization': '$token',
+        'Content-Type': 'application/json',
+        'lang': 'en',
       };
     }
     return options;
