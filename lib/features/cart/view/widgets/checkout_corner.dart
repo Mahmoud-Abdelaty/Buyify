@@ -10,7 +10,9 @@ class CheckoutCorner extends StatelessWidget {
         int itemsNum = 0;
         itemsNum = state is CartSuccessState ? state.data.cartItems.length : 0;
         return Container(
+
           height: 290.h,
+
           width: double.infinity,
           color: AppColors.white,
           child: Padding(

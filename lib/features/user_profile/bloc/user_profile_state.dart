@@ -13,3 +13,12 @@ class UserProfileSuccess extends UserProfileState {
 class UserProfileLoading extends UserProfileState {}
 
 class UserProfileError extends UserProfileState {}
+
+class UserAddressSuccess extends UserProfileState {
+  final AddressModel data;
+  UserAddressSuccess(this.data);
+}
+
+class UserAddressLoading extends UserProfileState {}
+
+class UserAddressError extends UserProfileState {}

@@ -23,7 +23,8 @@ class HomeAppBar extends StatelessWidget {
         Padding(
           padding: EdgeInsets.only(right: 10.w),
           child: IconButton(
-            onPressed: () {},
+            onPressed: () => Navigator.push(context,
+                MaterialPageRoute(builder: (context) => const CartView())),
             icon: Icon(
               Iconic.shopping_cart_bold,
               size: 20.sp,

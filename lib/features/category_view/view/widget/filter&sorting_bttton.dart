@@ -32,14 +32,17 @@ class FilterAndSortingButton extends StatelessWidget {
         },
       ),
       color: Colors.white,
+
       width: 325.w,
       border: Border.all(color: Colors.black),
       child: Text(
+
         'Filter & Sorting',
         style: AppTextStyle.medium(
           fontSize: 14.sp,
         ),
       ),
+
     );
   }
 }

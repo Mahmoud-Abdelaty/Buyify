@@ -19,7 +19,6 @@ class ItemBox extends StatelessWidget {
       child: Container(
         width: 156.w,
         decoration: BoxDecoration(
-          color: AppColors.white,
           borderRadius: BorderRadius.circular(10.r),
         ),
         child: Column(
@@ -29,8 +28,8 @@ class ItemBox extends StatelessWidget {
               padding: EdgeInsets.symmetric(horizontal: 10.w, vertical: 10.h),
               child: productModel.discount != 0
                   ? Container(
-                      height: 30.h,
-                      width: 65.w,
+                      height: 35.h,
+                      width: 60.w,
                       decoration: BoxDecoration(
                         color: AppColors.rating_color,
                         borderRadius: BorderRadius.circular(15.r),
@@ -48,7 +47,7 @@ class ItemBox extends StatelessWidget {
                   : SizedBox(height: 30.h),
             ),
             Padding(
-              padding: EdgeInsets.fromLTRB(10.w, 0.h, 16.w, 20.h),
+              padding: EdgeInsets.fromLTRB(10.w, 0.h, 16.w, 0.h),
               child: Center(
                 child: SizedBox(
                   width: 100.w,

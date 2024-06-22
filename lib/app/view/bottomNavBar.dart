@@ -11,38 +11,35 @@ class BottomNavBar extends StatelessWidget {
         builder: (context, state) {
           var bloc = BlocProvider.of<BottomNavBarBloc>(context);
           return Scaffold(
-            bottomNavigationBar: SizedBox(
-              height: 60.h,
-              child: BottomNavigationBar(
-                iconSize: 25.sp,
-                selectedFontSize: 10.sp,
-                unselectedFontSize: 10.sp,
-                unselectedItemColor: AppColors.dark_blue,
-                selectedItemColor: AppColors.blue_ocean,
-                type: BottomNavigationBarType.fixed,
-                currentIndex: bloc.currentIndex,
-                onTap: (index) {
-                  bloc.add(ChangeNavBar(index));
-                },
-                items: const [
-                  BottomNavigationBarItem(
-                    icon: BottomNavBarTab(icon: Iconic.home),
-                    label: 'HOME',
-                  ),
-                  BottomNavigationBarItem(
-                    icon: BottomNavBarTab(icon: Iconic.heart),
-                    label: 'WISHLIST',
-                  ),
-                  BottomNavigationBarItem(
-                    icon: BottomNavBarTab(icon: Iconic.shopping_bag),
-                    label: 'ORDER',
-                  ),
-                  BottomNavigationBarItem(
-                    icon: BottomNavBarTab(icon: Iconic.user),
-                    label: 'ACCOUNT',
-                  ),
-                ],
-              ),
+            bottomNavigationBar: BottomNavigationBar(
+              iconSize: 25.sp,
+              selectedFontSize: 10.sp,
+              unselectedFontSize: 10.sp,
+              unselectedItemColor: AppColors.dark_blue,
+              selectedItemColor: AppColors.blue_ocean,
+              type: BottomNavigationBarType.fixed,
+              currentIndex: bloc.currentIndex,
+              onTap: (index) {
+                bloc.add(ChangeNavBar(index));
+              },
+              items: const [
+                BottomNavigationBarItem(
+                  icon: BottomNavBarTab(icon: Iconic.home),
+                  label: 'HOME',
+                ),
+                BottomNavigationBarItem(
+                  icon: BottomNavBarTab(icon: Iconic.heart),
+                  label: 'WISHLIST',
+                ),
+                BottomNavigationBarItem(
+                  icon: BottomNavBarTab(icon: Iconic.shopping_bag),
+                  label: 'ORDER',
+                ),
+                BottomNavigationBarItem(
+                  icon: BottomNavBarTab(icon: Iconic.user),
+                  label: 'ACCOUNT',
+                ),
+              ],
             ),
             body: bloc.screensList[bloc.currentIndex],
           );

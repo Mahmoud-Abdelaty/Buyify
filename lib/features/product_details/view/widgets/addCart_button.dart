@@ -30,6 +30,7 @@ class AddCartButton extends StatelessWidget {
           onTap: () => BlocProvider.of<ProductDetailsBloc>(context)
               .add(AddProductToCart(productId)),
           color: AppColors.blue_ocean,
+
           child: state is ProductAddedToCartLoading
               ? const UpDownLoaderWidget()
               : Text(
@@ -46,6 +47,7 @@ class AddCartButton extends StatelessWidget {
                     color: AppColors.white,
                   ),
                 ),
+
         );
       },
     );

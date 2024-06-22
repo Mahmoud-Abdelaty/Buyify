@@ -1,7 +1,7 @@
 part of 'widget/widgets.dart';
 
-class HomeScreen extends StatelessWidget {
-  const HomeScreen({super.key});
+class HomeView extends StatelessWidget {
+  const HomeView({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -10,7 +10,7 @@ class HomeScreen extends StatelessWidget {
           HomeBloc(HomeRepoImplement())..add(GetHomeDataEvent()),
       child: Scaffold(
         appBar: PreferredSize(
-          preferredSize: Size.fromHeight(51.h),
+          preferredSize: Size.fromHeight(66.h),
           child: const HomeAppBar(),
         ),
         body: BlocBuilder<HomeBloc, HomeState>(
@@ -47,7 +47,7 @@ class HomeScreen extends StatelessWidget {
             } else if (state is HomeLoading) {
               return const LoadingState();
             } else {
-              return const ErrorState();
+              return HomeLoading();
             }
           },
         ),

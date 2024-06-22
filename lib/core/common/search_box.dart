@@ -22,7 +22,7 @@ class SearchBox extends StatelessWidget {
         },
         child: Container(
           width: 325.w,
-          height: 45.h,
+          height: 50.h,
           alignment: Alignment.center,
           padding: EdgeInsets.symmetric(horizontal: 10.w),
           decoration: BoxDecoration(

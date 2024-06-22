@@ -32,11 +32,11 @@ class ProductAddedToCartSuccess extends ProductDetailsState {
 
 class ProductAddedToCartFailed extends ProductDetailsState {}
 
-class GetFavoriteProductsLoading extends ProductDetailsState {}
+class GetProductsLoading extends ProductDetailsState {}
 
-class GetFavoriteProductsSuccess extends ProductDetailsState {
-  final List<ProductFavModel> data;
-  GetFavoriteProductsSuccess(this.data);
+class GetProductsSuccess extends ProductDetailsState {
+  final HomeModel data;
+  GetProductsSuccess(this.data);
 }
 
-class GetFavoriteProductsFailed extends ProductDetailsState {}
+class GetProductsError extends ProductDetailsState {}

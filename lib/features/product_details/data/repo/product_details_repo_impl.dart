@@ -73,4 +73,20 @@ class ProductDetailsRepoImplement implements ProductDetailsRepo {
       return left(ErrorHandler.handle(e).failure);
     }
   }
+
+  @override
+  Future<Either<Failure?, HomeModel>> fetchProducts() async {
+    try {
+      var result =
+          await NetworkHelper.instance.get(endPoint: EndPoints.GET_HOME_DATA);
+      var json = result.data['data'];
+
+      var data = HomeModel.fromJson(json);
+
+      return right(data);
+    } catch (e) {
+      print(e);
+      return left(ErrorHandler.handle(e).failure);
+    }
+  }
 }

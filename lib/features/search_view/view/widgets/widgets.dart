@@ -11,5 +11,6 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:iconic/iconic.dart';
 
 part '../search_view.dart';
+part 'seaarch_item.dart';
 part 'search_box_result.dart';
 part 'search_empty.dart';

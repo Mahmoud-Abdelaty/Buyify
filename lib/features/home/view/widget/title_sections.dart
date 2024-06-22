@@ -1,11 +1,10 @@
 part of 'widgets.dart';
 
 class TitleSections extends StatelessWidget {
-  const TitleSections(
-      {super.key, required this.title, required this.onPressed});
+  const TitleSections({super.key, required this.title, this.onPressed});
 
   final String title;
-  final Function() onPressed;
+  final Function()? onPressed;
   @override
   Widget build(BuildContext context) {
     return Padding(

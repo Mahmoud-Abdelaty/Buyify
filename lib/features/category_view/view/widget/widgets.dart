@@ -1,5 +1,5 @@
 import 'package:Buyify/core/common/custom_buttons.dart';
-import 'package:Buyify/core/common/error_satet.dart';
+import 'package:Buyify/core/common/error_state.dart';
 import 'package:Buyify/core/common/loading_state.dart';
 import 'package:Buyify/core/helpers/functions.dart';
 import 'package:Buyify/core/utils/app_colors.dart';
@@ -17,4 +17,6 @@ import 'package:iconic/iconic.dart';
 
 part '../../../home/view/widget/all_categories.dart';
 part '../category_view.dart';
+part 'category_data.dart';
 part 'dialog_filtering&sorting.dart';
+part 'filter&sorting_bttton.dart';

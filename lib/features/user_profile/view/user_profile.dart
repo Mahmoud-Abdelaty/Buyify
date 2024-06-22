@@ -1,11 +1,10 @@
 part of 'widgets/widgets.dart';
 
-class UserProfile extends StatelessWidget {
-  const UserProfile({super.key});
+class UserProfileView extends StatelessWidget {
+  const UserProfileView({super.key});
 
   @override
   Widget build(BuildContext context) {
-    double top = 0;
     return BlocProvider(
       create: (context) =>
           UserProfileBloc(UserProfileRepoImplement())..add(GetUserDataEvent()),
@@ -13,17 +12,16 @@ class UserProfile extends StatelessWidget {
         body: BlocBuilder<UserProfileBloc, UserProfileState>(
           builder: (context, state) {
             if (state is UserProfileSuccess) {
-              return CustomScrollView(
-                slivers: [
-                  SliverAppBarCustom(model: state.data),
-                  UserData(model: state.data),
+              return Column(
+                children: [
+                  MainUserData(model: state.data),
+                  AnotherUserData(model: state.data),
                 ],
               );
             } else if (state is UserProfileLoading) {
               return const LoadingState();
             } else {
-              // return ErrorState();
-              return const SizedBox();
+              return const ErrorState();
             }
           },
         ),
