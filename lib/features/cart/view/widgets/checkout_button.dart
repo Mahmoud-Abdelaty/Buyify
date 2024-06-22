@@ -9,13 +9,13 @@ class CheckoutButton extends StatelessWidget {
       onTap: () {},
       color: AppColors.blue_ocean,
       width: 300.w,
-      child: Center(
-          child: Text(
+      child: Text(
+
         'Checkout',
         style: AppTextStyle.bold(
           fontSize: 17.sp,
         ),
-      )),
+
     );
   }
 }

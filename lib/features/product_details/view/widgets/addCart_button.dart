@@ -30,24 +30,24 @@ class AddCartButton extends StatelessWidget {
           onTap: () => BlocProvider.of<ProductDetailsBloc>(context)
               .add(AddProductToCart(productId)),
           color: AppColors.blue_ocean,
-          child: Center(
-            child: state is ProductAddedToCartLoading
-                ? const UpDownLoaderWidget()
-                : Text(
-                    BlocProvider.of<ProductDetailsBloc>(context)
-                                .inCart[productId] ==
-                            null
-                        ? 'Add To Cart'
-                        : BlocProvider.of<ProductDetailsBloc>(context)
-                                .inCart[productId]!
-                            ? 'Remove From Cart'
-                            : 'Add to Cart',
-                    style: AppTextStyle.medium(
-                      fontSize: 14.sp,
-                      color: AppColors.white,
-                    ),
+
+          child: state is ProductAddedToCartLoading
+              ? const UpDownLoaderWidget()
+              : Text(
+                  BlocProvider.of<ProductDetailsBloc>(context)
+                              .inCart[productId] ==
+                          null
+                      ? 'Add To Cart'
+                      : BlocProvider.of<ProductDetailsBloc>(context)
+                              .inCart[productId]!
+                          ? 'Remove From Cart'
+                          : 'Add to Cart',
+                  style: AppTextStyle.medium(
+                    fontSize: 14.sp,
+                    color: AppColors.white,
                   ),
-          ),
+                ),
+
         );
       },
     );
