@@ -92,6 +92,9 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 4
+}</component>
   <component name="ProjectId" id="2e8kMtwfFNNfP7Tcl1oUbDy1I8k" />
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -126,6 +129,8 @@
       <recent name="D:\GitHub\Buyify\lib\features\user_profile\view\widgets" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Git-Hub\Android-Studio\Flutter\Buyify\lib\features\authentication\data\repo" />
+      <recent name="D:\Git-Hub\Android-Studio\Flutter\Buyify\lib\features\authentication\bloc" />
       <recent name="C:\Users\DELL\Documents\GitHub\Buyify\assets\fonts" />
       <recent name="C:\Users\DELL\Documents\GitHub\E-Commerce\web" />
     </key>
@@ -138,7 +143,20 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1711293553558</updated>
+      <workItem from="1711795294681" duration="5476000" />
+      <workItem from="1711827698628" duration="2840000" />
+      <workItem from="1711873982933" duration="3391000" />
+      <workItem from="1712609620566" duration="582000" />
+      <workItem from="1713470095320" duration="313000" />
+      <workItem from="1713470844787" duration="123000" />
     </task>
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>
