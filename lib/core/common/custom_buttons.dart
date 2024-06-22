@@ -6,8 +6,8 @@ class CustomButtons extends StatefulWidget {
     super.key,
     required this.color,
     required this.child,
-    this.width = 153,
-    this.height = 50,
+    this.width = 160,
+    this.height = 60,
     this.border,
     this.onTap,
   });
@@ -37,8 +37,8 @@ class _CustomButtonsState extends State<CustomButtons> {
       },
       child: AnimatedContainer(
         curve: Curves.fastLinearToSlowEaseIn,
-        width: isTapped ? widget.width.w - 1.w : widget.width.w,
-        height: isTapped ? widget.height.w - 1.h : widget.height.h,
+        width: isTapped ? widget.width.w - 10.w : widget.width.w,
+        height: isTapped ? widget.height.w - 10.h : widget.height.h,
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(10.r),
           border: widget.border,
@@ -52,7 +52,7 @@ class _CustomButtonsState extends State<CustomButtons> {
           ],
         ),
         duration: const Duration(milliseconds: 200),
-        child: widget.child,
+        child: Center(child: widget.child),
       ),
     );
   }
