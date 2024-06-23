@@ -5,6 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b74bfcc6-e980-4aff-bea4-fedd4bf9fd11" name="Changes" comment="">
+<<<<<<< Updated upstream
       <change afterPath="$PROJECT_DIR$/lib/core/common/up_down_loader.dart" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/lib/features/product_details/view/widgets/addCart_button.dart" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/lib/features/product_details/view/widgets/favorite_button.dart" afterDir="false" />
@@ -61,6 +62,10 @@
       <change beforePath="$PROJECT_DIR$/lib/features/user_profile/view/widgets/widgets.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/features/user_profile/view/widgets/widgets.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/main.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.yaml" afterDir="false" />
+=======
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Dart_Packages.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Dart_Packages.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+>>>>>>> Stashed changes
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -152,11 +157,24 @@
     </task>
     <servers />
   </component>
+<<<<<<< Updated upstream
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
     <select />
+=======
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="Dart">
+          <url>file://$PROJECT_DIR$/lib/features/product_details/bloc/product_details_bloc.dart</url>
+          <line>44</line>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+>>>>>>> Stashed changes
   </component>
 </project>

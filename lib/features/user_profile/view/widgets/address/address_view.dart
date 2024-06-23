@@ -13,11 +13,24 @@ class AddressView extends StatelessWidget {
           title: 'Address',
           style: AppTextStyle.medium(fontSize: 15.sp),
           actions: [
-            IconButton(
-              onPressed: () {},
-              icon: Icon(
-                Iconic.plus_bold,
-                size: 15.sp,
+            Builder(
+              builder: (context) => IconButton(
+                onPressed: () async {
+                  final statue = await Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => const AddAddress(),
+                    ),
+                  );
+                  if (statue == true) {
+                    BlocProvider.of<UserProfileBloc>(context)
+                        .add(GetUserAddressEvent());
+                  }
+                },
+                icon: Icon(
+                  Iconic.plus_bold,
+                  size: 15.sp,
+                ),
               ),
             ),
           ],
@@ -36,22 +49,26 @@ class AddressView extends StatelessWidget {
                         fontSize: 17.sp,
                       ),
                     ),
-                    ListView.separated(
-                      padding: EdgeInsets.symmetric(vertical: 25.h),
-                      shrinkWrap: true,
-                      itemBuilder: (context, index) =>
-                          AddressItem(model: state.data.addresses[index]),
-                      separatorBuilder: (context, index) =>
-                          SizedBox(height: 20.h),
-                      itemCount: 2,
+                    Expanded(
+                      child: ListView.separated(
+                        padding: EdgeInsets.symmetric(vertical: 25.h),
+                        shrinkWrap: true,
+                        itemBuilder: (context, index) =>
+                            AddressItem(model: state.data.addresses[index]),
+                        separatorBuilder: (context, index) =>
+                            SizedBox(height: 20.h),
+                        itemCount: state.data.addresses.length,
+                      ),
                     ),
                   ],
                 ),
               );
             } else if (state is UserAddressLoading) {
               return const LoadingState();
-            } else {
+            } else if (state is UserAddressError) {
               return const ErrorState();
+            } else {
+              return const LoadingState();
             }
           },
         ),

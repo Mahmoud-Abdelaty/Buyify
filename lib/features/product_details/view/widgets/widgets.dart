@@ -1,6 +1,7 @@
 import 'package:Buyify/core/common/custom_buttons.dart';
 import 'package:Buyify/core/common/error_state.dart';
 import 'package:Buyify/core/common/loading_state.dart';
+import 'package:Buyify/core/common/showSnackBar.dart';
 import 'package:Buyify/core/common/up_down_loader.dart';
 import 'package:Buyify/core/utils/app_colors.dart';
 import 'package:Buyify/core/utils/app_text.dart';
@@ -11,7 +12,6 @@ import 'package:Buyify/features/home/data/repo/home_repo_impl.dart';
 import 'package:Buyify/features/home/view/widget/widgets.dart';
 import 'package:Buyify/features/product_details/bloc/product_details_bloc.dart';
 import 'package:Buyify/features/product_details/data/repo/product_details_repo_impl.dart';
-import 'package:Buyify/features/product_details/view/widgets/showSnackBar.dart';
 import 'package:awesome_snackbar_content/awesome_snackbar_content.dart';
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
