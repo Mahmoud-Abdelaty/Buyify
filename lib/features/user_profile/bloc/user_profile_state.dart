@@ -15,10 +15,37 @@ class UserProfileLoading extends UserProfileState {}
 class UserProfileError extends UserProfileState {}
 
 class UserAddressSuccess extends UserProfileState {
-  final AddressModel data;
+  final AddressDataModel data;
   UserAddressSuccess(this.data);
 }
 
 class UserAddressLoading extends UserProfileState {}
 
 class UserAddressError extends UserProfileState {}
+
+class UpdateUserAddressSuccess extends UserProfileState {
+  final AddressModel data;
+  UpdateUserAddressSuccess(this.data);
+}
+
+class UpdateUserAddressLoading extends UserProfileState {}
+
+class UpdateUserAddressError extends UserProfileState {}
+
+class AddUserAddressSuccess extends UserProfileState {
+  final AddressModel data;
+  AddUserAddressSuccess(this.data);
+}
+
+class AddUserAddressLoading extends UserProfileState {}
+
+class AddUserAddressError extends UserProfileState {}
+
+class DeleteUserAddressSuccess extends UserProfileState {
+  final AddressModel data;
+  DeleteUserAddressSuccess(this.data);
+}
+
+class DeleteUserAddressLoading extends UserProfileState {}
+
+class DeleteUserAddressError extends UserProfileState {}

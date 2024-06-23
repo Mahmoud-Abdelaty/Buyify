@@ -10,12 +10,11 @@ class CheckoutButton extends StatelessWidget {
       color: AppColors.blue_ocean,
       width: 300.w,
       child: Text(
-
         'Checkout',
         style: AppTextStyle.bold(
           fontSize: 17.sp,
         ),
-
+      ),
     );
   }
 }
